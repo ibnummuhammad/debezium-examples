@@ -159,7 +159,7 @@ docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -
 Verify that the PostgreSQL database has the same content:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
  Thomas    | 1001 | Sally      | sally.thomas@acme.com

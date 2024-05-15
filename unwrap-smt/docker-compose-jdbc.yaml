@@ -1,51 +1,55 @@
 version: '2'
 services:
   zookeeper:
-    image: quay.io/debezium/zookeeper:${DEBEZIUM_VERSION}
+    image: bitnami/zookeeper:3.7.2
     ports:
-     - 2181:2181
-     - 2888:2888
-     - 3888:3888
+      - 2181:2181
+      - 2888:2888
+      - 3888:3888
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
   kafka:
-    image: quay.io/debezium/kafka:${DEBEZIUM_VERSION}
+    image: bitnami/kafka:3.3
     ports:
-     - 9092:9092
+      - 9092:9092
     links:
-     - zookeeper
+      - zookeeper
     environment:
-     - ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
   mysql:
-    image: quay.io/debezium/example-mysql:${DEBEZIUM_VERSION}
+    image: mysql:8.0
     ports:
-     - 3306:3306
+      - 3306:3306
     environment:
-     - MYSQL_ROOT_PASSWORD=debezium
-     - MYSQL_USER=mysqluser
-     - MYSQL_PASSWORD=mysqlpw 
+      - MYSQL_ROOT_PASSWORD=debezium
+      - MYSQL_USER=mysqluser
+      - MYSQL_PASSWORD=mysqlpw
   postgres:
-    image: quay.io/debezium/postgres:9.6
+    image: postgres:16.2
     ports:
-     - "5432:5432"
+      - "5432:5432"
     environment:
-     - POSTGRES_USER=postgresuser
-     - POSTGRES_PASSWORD=postgrespw
-     - POSTGRES_DB=inventory
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=postgrespw
+      - POSTGRES_DB=inventory
   connect:
-    image: debezium/connect-jdbc-es:${DEBEZIUM_VERSION}
+    image: debezium/connect-jdbc:${DEBEZIUM_VERSION}
     build:
       context: debezium-jdbc-es
+      dockerfile: debezium-jdbc.Dockerfile
       args:
         DEBEZIUM_VERSION: ${DEBEZIUM_VERSION}
     ports:
-     - 8083:8083
-     - 5005:5005
+      - 8083:8083
+      - 5005:5005
     links:
-     - kafka
-     - mysql
-     - postgres
+      - kafka
+      - mysql
+      - postgres
     environment:
-     - BOOTSTRAP_SERVERS=kafka:9092
-     - GROUP_ID=1
-     - CONFIG_STORAGE_TOPIC=my_connect_configs
-     - OFFSET_STORAGE_TOPIC=my_connect_offsets
-     - STATUS_STORAGE_TOPIC=my_source_connect_statuses
+      - BOOTSTRAP_SERVERS=kafka:9092
+      - GROUP_ID=1
+      - CONFIG_STORAGE_TOPIC=my_connect_configs
+      - OFFSET_STORAGE_TOPIC=my_connect_offsets
+      - STATUS_STORAGE_TOPIC=my_source_connect_statuses

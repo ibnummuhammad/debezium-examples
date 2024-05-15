@@ -72,46 +72,46 @@ docker-compose --file unwrap-smt/docker-compose-jdbc.yaml up --detach --build
 Grant access to mysqluser:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u root -p$MYSQL_ROOT_PASSWORD -e "GRANT ALL PRIVILEGES ON *.* TO '"'"'mysqluser'"'"'@'"'"'%'"'"' WITH GRANT OPTION"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user root --password=$MYSQL_ROOT_PASSWORD --execute "GRANT ALL PRIVILEGES ON *.* TO '"'"'mysqluser'"'"'@'"'"'%'"'"' WITH GRANT OPTION"'
 ```
 
 Create database inventory:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "CREATE DATABASE inventory"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD --execute "CREATE DATABASE inventory"'
 ```
 
 View list of databases in mysql:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "SHOW DATABASES"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD --execute "SHOW DATABASES"'
 ```
 
 Create table customers:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "CREATE TABLE customers (id int NOT NULL AUTO_INCREMENT, first_name varchar(255) NOT NULL, last_name varchar(255) NOT NULL, email varchar(255) NOT NULL, PRIMARY KEY (id), UNIQUE KEY email (email)) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "CREATE TABLE customers (id int NOT NULL AUTO_INCREMENT, first_name varchar(255) NOT NULL, last_name varchar(255) NOT NULL, email varchar(255) NOT NULL, PRIMARY KEY (id), UNIQUE KEY email (email)) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"'
 ```
 
 View list of tables in mysql:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "SHOW TABLES"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "SHOW TABLES"'
 ```
 
 Insert data into inventory.customers:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "insert into customers values(default, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "insert into customers values(default, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "insert into customers values(default, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "insert into customers values(default, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
 ```
 
 View data in table inventory.customers:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "SELECT * FROM customers"'
 ```
 
 Connect database to kafka:
@@ -145,7 +145,7 @@ docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "/opt/bitnami/ka
 Check contents of the MySQL database:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "SELECT * FROM customers"'
 +------+------------+-----------+-----------------------+
 | id   | first_name | last_name | email                 |
 +------+------------+-----------+-----------------------+
@@ -159,7 +159,7 @@ docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -
 Verify that the PostgreSQL database has the same content:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql -U $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
  Thomas    | 1001 | Sally      | sally.thomas@acme.com
@@ -173,14 +173,14 @@ docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bas
 
 Insert a new record into MySQL;
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "INSERT INTO customers VALUES(DEFAULT, '"'"'John'"'"', '"'"'Doe'"'"', '"'"'john.doe@example.com'"'"')"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(DEFAULT, '"'"'John'"'"', '"'"'Doe'"'"', '"'"'john.doe@example.com'"'"')"'
 Query OK, 1 row affected (0.02 sec)
 ```
 
 Verify that PostgreSQL contains the new record:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql -U $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...
@@ -193,14 +193,14 @@ Doe        | 1005 | John       | john.doe@example.com
 Update a record in MySQL:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "UPDATE customers SET first_name='"'"'Jane'"'"', last_name='"'"'Roe'"'"' WHERE last_name='"'"'Doe'"'"'"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "UPDATE customers SET first_name='"'"'Jane'"'"', last_name='"'"'Roe'"'"' WHERE last_name='"'"'Doe'"'"'"'
 Rows matched: 1  Changed: 1  Warnings: 0
 ```
 
 Verify that record in PostgreSQL is updated:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql -U $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...
@@ -213,14 +213,14 @@ Roe        | 1005 | Jane       | john.doe@example.com
 Delete a record in MySQL:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql -u $MYSQL_USER -p$MYSQL_PASSWORD inventory -e "DELETE FROM customers WHERE email='"'"'john.doe@example.com'"'"'"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec mysql /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "DELETE FROM customers WHERE email='"'"'john.doe@example.com'"'"'"'
 Query OK, 1 row affected (0.01 sec)
 ```
 
 Verify that record in PostgreSQL is deleted:
 
 ```shell
-docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql -U $POSTGRES_USER $POSTGRES_DB -c "SELECT * FROM customers"'
+docker-compose --file unwrap-smt/docker-compose-jdbc.yaml exec postgres /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...
@@ -300,7 +300,7 @@ curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json"
 Check contents of the MySQL database:
 
 ```shell
-docker compose -f docker-compose-es.yaml exec mysql bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory -e "select * from customers"'
+docker compose -f docker-compose-es.yaml exec mysql bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "select * from customers"'
 +------+------------+-----------+-----------------------+
 | id   | first_name | last_name | email                 |
 +------+------------+-----------+-----------------------+
@@ -385,7 +385,7 @@ curl 'http://localhost:9200/customers/_search?pretty'
 Insert a new record into MySQL:
 
 ```shell
-docker compose -f docker-compose-es.yaml exec mysql bash -c 'mysql -u $MYSQL_USER  -p$MYSQL_PASSWORD inventory'
+docker compose -f docker-compose-es.yaml exec mysql bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory'
 mysql> insert into customers values(default, 'John', 'Doe', 'john.doe@example.com');
 Query OK, 1 row affected (0.02 sec)
 ```

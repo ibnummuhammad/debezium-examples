@@ -39,12 +39,12 @@ services:
       - POSTGRES_PASSWORD=postgrespw
       - POSTGRES_DB=inventory
   connect:
-    image: debezium/connect-jdbc:${DEBEZIUM_VERSION}
+    image: debezium/connect-jdbc:2.1
     build:
       context: debezium-jdbc-es
       dockerfile: debezium-jdbc.Dockerfile
       args:
-        DEBEZIUM_VERSION: ${DEBEZIUM_VERSION}
+        DEBEZIUM_VERSION: 2.1
     ports:
       - 8083:8083
       - 5005:5005

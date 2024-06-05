@@ -1,9 +1,9 @@
 {
   "schema": {
     "type": "struct",
-    "fields": [{ "type": "string", "optional": false, "field": "elt_id" }],
+    "fields": [{ "type": "string", "optional": false, "field": "running" }],
     "optional": false,
     "name": "dbserver1.inventory.customers.Key"
   },
-  "payload": { "elt_id": "1006" }
+  "payload": { "running": "berlari" }
 }

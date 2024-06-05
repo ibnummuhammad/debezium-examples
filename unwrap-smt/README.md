@@ -133,13 +133,17 @@ curl --silent "http://localhost:8083/connectors?expand=info&expand=status" | jq 
 View list of kafka topics:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "/opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server kafka:9092"
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server kafka:9092'
 ```
 
 View message in kafka topic:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "/opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --property print.key=true --from-beginning --topic customers"
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --property print.key=true --from-beginning --topic customers'
+```
+
+```shell
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --property print.key=true --from-beginning --topic keluaran'
 ```
 
 Check contents of the MySQL database:
@@ -156,10 +160,23 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 +------+------------+-----------+-----------------------+
 ```
 
+#### Insert directly in Kafka Producer
+
+Open kafka-console-producer:
+```shell
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --property 'parse.key=true' --property 'key.separator=|' --topic keluaran"
+```
+
+Insert message in kafka-console-producer:
+
+```shell
+{"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"}],"optional":false,"name":"dbserver1.inventory.customers.Key"},"payload":{"id":1006}}|{"schema":{"type":"struct","fields":[{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"},{"type":"string","optional":false,"field":"first_name"},{"type":"string","optional":false,"field":"last_name"},{"type":"string","optional":false,"field":"email"}],"optional":true,"name":"dbserver1.inventory.customers.Value","field":"before"},{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"},{"type":"string","optional":false,"field":"first_name"},{"type":"string","optional":false,"field":"last_name"},{"type":"string","optional":false,"field":"email"}],"optional":true,"name":"dbserver1.inventory.customers.Value","field":"after"},{"type":"struct","fields":[{"type":"string","optional":false,"field":"version"},{"type":"string","optional":false,"field":"connector"},{"type":"string","optional":false,"field":"name"},{"type":"int64","optional":false,"field":"ts_ms"},{"type":"string","optional":true,"name":"io.debezium.data.Enum","version":1,"parameters":{"allowed":"true,last,false,incremental"},"default":"false","field":"snapshot"},{"type":"string","optional":false,"field":"db"},{"type":"string","optional":true,"field":"sequence"},{"type":"string","optional":true,"field":"table"},{"type":"int64","optional":false,"field":"server_id"},{"type":"string","optional":true,"field":"gtid"},{"type":"string","optional":false,"field":"file"},{"type":"int64","optional":false,"field":"pos"},{"type":"int32","optional":false,"field":"row"},{"type":"int64","optional":true,"field":"thread"},{"type":"string","optional":true,"field":"query"}],"optional":false,"name":"io.debezium.connector.mysql.Source","field":"source"},{"type":"string","optional":false,"field":"op"},{"type":"int64","optional":true,"field":"ts_ms"},{"type":"struct","fields":[{"type":"string","optional":false,"field":"id"},{"type":"int64","optional":false,"field":"total_order"},{"type":"int64","optional":false,"field":"data_collection_order"}],"optional":true,"name":"event.block","version":1,"field":"transaction"}],"optional":false,"name":"dbserver1.inventory.customers.Envelope","version":1},"payload":{"before":null,"after":{"id":1006,"first_name":"ibnu","last_name":"muhammad","email":"ibnu_muhammad@gmail.com"},"source":{"version":"2.1.4.Final","connector":"mysql","name":"dbserver1","ts_ms":1717568433000,"snapshot":"false","db":"inventory","sequence":null,"table":"customers","server_id":1,"gtid":null,"file":"binlog.000002","pos":2645,"row":0,"thread":23,"query":null},"op":"c","ts_ms":1717568433831,"transaction":null}}
+```
+
 Verify that the PostgreSQL database has the same content:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM keluaran"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
  Thomas    | 1001 | Sally      | sally.thomas@acme.com
@@ -180,25 +197,12 @@ Query OK, 1 row affected (0.02 sec)
 Verify that PostgreSQL contains the new record:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM keluaran"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...
 Doe        | 1005 | John       | john.doe@example.com
 (5 rows)
-```
-
-#### Insert directly in Kafka Producer
-
-Open kafka-console-producer:
-```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --property 'parse.key=true' --property 'key.separator=|' --topic customers"
-```
-
-Insert message in kafka-console-producer:
-
-```shell
-{"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"}],"optional":false,"name":"dbserver1.inventory.customers.Key"},"payload":{"id":1006}}|{"schema":{"type":"struct","fields":[{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"},{"type":"string","optional":false,"field":"first_name"},{"type":"string","optional":false,"field":"last_name"},{"type":"string","optional":false,"field":"email"}],"optional":true,"name":"dbserver1.inventory.customers.Value","field":"before"},{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"},{"type":"string","optional":false,"field":"first_name"},{"type":"string","optional":false,"field":"last_name"},{"type":"string","optional":false,"field":"email"}],"optional":true,"name":"dbserver1.inventory.customers.Value","field":"after"},{"type":"struct","fields":[{"type":"string","optional":false,"field":"version"},{"type":"string","optional":false,"field":"connector"},{"type":"string","optional":false,"field":"name"},{"type":"int64","optional":false,"field":"ts_ms"},{"type":"string","optional":true,"name":"io.debezium.data.Enum","version":1,"parameters":{"allowed":"true,last,false,incremental"},"default":"false","field":"snapshot"},{"type":"string","optional":false,"field":"db"},{"type":"string","optional":true,"field":"sequence"},{"type":"string","optional":true,"field":"table"},{"type":"int64","optional":false,"field":"server_id"},{"type":"string","optional":true,"field":"gtid"},{"type":"string","optional":false,"field":"file"},{"type":"int64","optional":false,"field":"pos"},{"type":"int32","optional":false,"field":"row"},{"type":"int64","optional":true,"field":"thread"},{"type":"string","optional":true,"field":"query"}],"optional":false,"name":"io.debezium.connector.mysql.Source","field":"source"},{"type":"string","optional":false,"field":"op"},{"type":"int64","optional":true,"field":"ts_ms"},{"type":"struct","fields":[{"type":"string","optional":false,"field":"id"},{"type":"int64","optional":false,"field":"total_order"},{"type":"int64","optional":false,"field":"data_collection_order"}],"optional":true,"name":"event.block","version":1,"field":"transaction"}],"optional":false,"name":"dbserver1.inventory.customers.Envelope","version":1},"payload":{"before":null,"after":{"id":1006,"first_name":"ibnu","last_name":"muhammad","email":"ibnu_muhammad@gmail.com"},"source":{"version":"2.1.4.Final","connector":"mysql","name":"dbserver1","ts_ms":1717568433000,"snapshot":"false","db":"inventory","sequence":null,"table":"customers","server_id":1,"gtid":null,"file":"binlog.000002","pos":2645,"row":0,"thread":23,"query":null},"op":"c","ts_ms":1717568433831,"transaction":null}}
 ```
 
 #### Record update
@@ -213,7 +217,7 @@ Rows matched: 1  Changed: 1  Warnings: 0
 Verify that record in PostgreSQL is updated:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM keluaran"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...
@@ -233,7 +237,7 @@ Query OK, 1 row affected (0.01 sec)
 Verify that record in PostgreSQL is deleted:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM customers"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM keluaran"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
 ...

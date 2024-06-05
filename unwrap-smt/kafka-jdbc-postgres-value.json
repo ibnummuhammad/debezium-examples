@@ -81,11 +81,12 @@
     "version": 1
   },
   "payload": {
+    "before": null,
     "after": {
-      "id": 1010,
-      "first_name": "azaria",
-      "last_name": "laras",
-      "email": "azaria_laras@warpin.co.id"
+      "id": 1006,
+      "first_name": "ibnu",
+      "last_name": "muhammad",
+      "email": "ibnu_muhammad@gmail.com"
     },
     "source": {
       "version": "2.1.4.Final",

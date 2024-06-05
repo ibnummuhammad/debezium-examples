@@ -3,7 +3,7 @@
     "type": "struct",
     "fields": [{ "type": "string", "optional": false, "field": "running" }],
     "optional": false,
-    "name": "dbserver1.inventory.customers.Key"
+    "name": "gudang.Key"
   },
   "payload": { "running": "berlari" }
 }

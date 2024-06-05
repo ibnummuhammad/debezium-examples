@@ -13,7 +13,7 @@
           { "type": "string", "optional": false, "field": "run_ts" }
         ],
         "optional": true,
-        "name": "dbserver1.inventory.customers.Value",
+        "name": "gudang.Value",
         "field": "after"
       }
     ],
@@ -24,7 +24,7 @@
   "payload": {
     "after": {
       "params": "godzilla",
-      "payload": "benten",
+      "payload": "taraarts",
       "etl_id": "jadi",
       "etl_id_ts": "watson",
       "etl_id_partition": "paraoh",

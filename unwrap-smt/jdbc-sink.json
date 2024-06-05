@@ -9,9 +9,7 @@
     "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
     "transforms.unwrap.drop.tombstones": "false",
     "auto.create": "true",
-    "insert.mode": "upsert",
-    "delete.enabled": "false",
-    "pk.fields": "id",
-    "pk.mode": "record_key"
+    "insert.mode": "insert",
+    "delete.enabled": "false"
   }
 }

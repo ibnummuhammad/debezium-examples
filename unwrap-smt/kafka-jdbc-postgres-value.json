@@ -14,20 +14,6 @@
         ],
         "optional": true,
         "name": "dbserver1.inventory.customers.Value",
-        "field": "before"
-      },
-      {
-        "type": "struct",
-        "fields": [
-          { "type": "string", "optional": false, "field": "params" },
-          { "type": "string", "optional": false, "field": "payload" },
-          { "type": "string", "optional": false, "field": "etl_id" },
-          { "type": "string", "optional": false, "field": "etl_id_ts" },
-          { "type": "string", "optional": false, "field": "etl_id_partition" },
-          { "type": "string", "optional": false, "field": "run_ts" }
-        ],
-        "optional": true,
-        "name": "dbserver1.inventory.customers.Value",
         "field": "after"
       },
       { "type": "string", "optional": false, "field": "op" },
@@ -54,14 +40,13 @@
     "version": 1
   },
   "payload": {
-    "before": null,
     "after": {
       "params": "banco",
       "payload": "benten",
       "etl_id": "jadi",
       "etl_id_ts": "watson",
       "etl_id_partition": "partisi",
-      "run_ts": "lari"
+      "run_ts": "yugi"
     },
     "source": {
       "version": "2.1.4.Final",

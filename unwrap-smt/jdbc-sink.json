@@ -3,7 +3,7 @@
   "config": {
     "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
 
-    "connection.url": "jdbc:postgresql://postgres:5432/inventory",
+    "connection.url": "jdbc:postgresql://postgres:5432/data_warehouse",
     "connection.user": "postgresuser",
     "connection.password": "postgrespw",
 

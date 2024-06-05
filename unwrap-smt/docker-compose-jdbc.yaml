@@ -37,7 +37,7 @@ services:
     environment:
       - POSTGRES_USER=postgresuser
       - POSTGRES_PASSWORD=postgrespw
-      - POSTGRES_DB=inventory
+      - POSTGRES_DB=data_warehouse
   connect:
     image: debezium/connect-jdbc:2.1
     build:

@@ -5,10 +5,12 @@
       {
         "type": "struct",
         "fields": [
-          { "type": "int32", "optional": false, "field": "id" },
-          { "type": "string", "optional": false, "field": "first_name" },
-          { "type": "string", "optional": false, "field": "last_name" },
-          { "type": "string", "optional": false, "field": "email" }
+          { "type": "string", "optional": false, "field": "params" },
+          { "type": "string", "optional": false, "field": "payload" },
+          { "type": "string", "optional": false, "field": "etl_id" },
+          { "type": "string", "optional": false, "field": "etl_id_ts" },
+          { "type": "string", "optional": false, "field": "etl_id_partition" },
+          { "type": "string", "optional": false, "field": "run_ts" }
         ],
         "optional": true,
         "name": "dbserver1.inventory.customers.Value",
@@ -17,10 +19,12 @@
       {
         "type": "struct",
         "fields": [
-          { "type": "int32", "optional": false, "field": "id" },
-          { "type": "string", "optional": false, "field": "first_name" },
-          { "type": "string", "optional": false, "field": "last_name" },
-          { "type": "string", "optional": false, "field": "email" }
+          { "type": "string", "optional": false, "field": "params" },
+          { "type": "string", "optional": false, "field": "payload" },
+          { "type": "string", "optional": false, "field": "etl_id" },
+          { "type": "string", "optional": false, "field": "etl_id_ts" },
+          { "type": "string", "optional": false, "field": "etl_id_partition" },
+          { "type": "string", "optional": false, "field": "run_ts" }
         ],
         "optional": true,
         "name": "dbserver1.inventory.customers.Value",
@@ -83,10 +87,12 @@
   "payload": {
     "before": null,
     "after": {
-      "id": 1006,
-      "first_name": "ibnu",
-      "last_name": "muhammad",
-      "email": "ibnu_muhammad@gmail.com"
+      "params": "banco",
+      "payload": "iben",
+      "etl_id": "muhammad",
+      "etl_id_ts": "ibnu_muhammad@gmail.com",
+      "etl_id_partition": "partisi",
+      "run_ts": "lari"
     },
     "source": {
       "version": "2.1.4.Final",

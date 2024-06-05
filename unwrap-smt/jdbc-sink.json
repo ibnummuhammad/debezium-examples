@@ -10,6 +10,8 @@
     "insert.mode": "insert",
     "delete.enabled": "false",
 
+    "table.name.format": "testingnama",
+
     "auto.create": "true",
 
     "tasks.max": "1",

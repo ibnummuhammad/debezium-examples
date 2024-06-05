@@ -17,7 +17,7 @@
         "field": "after"
       }
     ],
-    "optional": false,
+    "optional": true,
     "name": "dbserver1.inventory.customers.Envelope",
     "version": 1
   },

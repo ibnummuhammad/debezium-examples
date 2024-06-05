@@ -3,7 +3,7 @@
     "type": "struct",
     "fields": [{ "type": "string", "optional": false, "field": "running" }],
     "optional": false,
-    "name": "gudang.Key"
+    "name": "gudang"
   },
   "payload": { "running": "berlari" }
 }

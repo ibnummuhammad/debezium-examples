@@ -13,7 +13,7 @@
           { "type": "string", "optional": false, "field": "run_ts" }
         ],
         "optional": true,
-        "name": "gudang.Value",
+        "name": "gudang",
         "field": "after"
       }
     ],
@@ -25,7 +25,7 @@
     "after": {
       "params": "godzilla",
       "payload": "taraarts",
-      "etl_id": "jadi",
+      "etl_id": "tanggal",
       "etl_id_ts": "watson",
       "etl_id_partition": "paraoh",
       "run_ts": "yugi"

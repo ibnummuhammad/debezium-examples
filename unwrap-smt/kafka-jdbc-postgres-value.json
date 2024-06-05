@@ -81,12 +81,11 @@
     "version": 1
   },
   "payload": {
-    "before": null,
     "after": {
-      "id": 1008,
-      "first_name": "betaria",
-      "last_name": "sarulina",
-      "email": "betaria_sarulina@katadata.co.id"
+      "id": 1010,
+      "first_name": "azaria",
+      "last_name": "laras",
+      "email": "azaria_laras@warpin.co.id"
     },
     "source": {
       "version": "2.1.4.Final",

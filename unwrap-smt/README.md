@@ -114,6 +114,12 @@ View data in table inventory.customers:
 docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "SELECT * FROM customers"'
 ```
 
+Create table schema:
+
+```shell
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "CREATE SCHEMA hoi"'
+```
+
 Connect database to kafka:
 
 ```shell
@@ -176,7 +182,7 @@ Insert message in kafka-console-producer:
 Verify that the PostgreSQL database has the same content:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM keluaran"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "SELECT * FROM data_warehouse.hoi.testingnama"'
  last_name |  id  | first_name |         email         
 -----------+------+------------+-----------------------
  Thomas    | 1001 | Sally      | sally.thomas@acme.com

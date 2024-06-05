@@ -11,6 +11,7 @@
     "auto.create": "true",
     "insert.mode": "upsert",
     "delete.enabled": "false",
-    "pk.mode": "kafka"
+    "pk.fields": "id",
+    "pk.mode": "record_key"
   }
 }

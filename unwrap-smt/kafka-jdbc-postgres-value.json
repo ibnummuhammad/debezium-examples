@@ -15,24 +15,6 @@
         "optional": true,
         "name": "dbserver1.inventory.customers.Value",
         "field": "after"
-      },
-      { "type": "string", "optional": false, "field": "op" },
-      { "type": "int64", "optional": true, "field": "ts_ms" },
-      {
-        "type": "struct",
-        "fields": [
-          { "type": "string", "optional": false, "field": "id" },
-          { "type": "int64", "optional": false, "field": "total_order" },
-          {
-            "type": "int64",
-            "optional": false,
-            "field": "data_collection_order"
-          }
-        ],
-        "optional": true,
-        "name": "event.block",
-        "version": 1,
-        "field": "transaction"
       }
     ],
     "optional": false,
@@ -41,15 +23,12 @@
   },
   "payload": {
     "after": {
-      "params": "banco",
+      "params": "godzilla",
       "payload": "benten",
       "etl_id": "jadi",
       "etl_id_ts": "watson",
       "etl_id_partition": "paraoh",
       "run_ts": "yugi"
-    },
-    "op": "c",
-    "ts_ms": 1717568433831,
-    "transaction": null
+    }
   }
 }

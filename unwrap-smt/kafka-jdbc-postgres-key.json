@@ -1,1 +1,9 @@
-{"schema":{"type":"struct","fields":[{"type":"int32","optional":false,"field":"id"}],"optional":false,"name":"dbserver1.inventory.customers.Key"},"payload":{"id":1008}}
+{
+  "schema": {
+    "type": "struct",
+    "fields": [{ "type": "int32", "optional": false, "field": "id" }],
+    "optional": false,
+    "name": "dbserver1.inventory.customers.Key"
+  },
+  "payload": { "id": 1008 }
+}

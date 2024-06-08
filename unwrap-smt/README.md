@@ -149,7 +149,7 @@ docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/ka
 ```
 
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --property print.key=true --from-beginning --topic keluaran'
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-console-consumer.sh --bootstrap-server kafka:9092 --property print.key=true --from-beginning --topic kafka-postres-topic'
 ```
 
 Check contents of the MySQL database:
@@ -170,7 +170,7 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 
 Open kafka-console-producer without key:
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic keluaran"
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic kafka-postres-topic"
 ```
 
 Insert message in kafka-console-producer without key:

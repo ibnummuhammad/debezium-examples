@@ -15,7 +15,7 @@
     "auto.create": "true",
 
     "tasks.max": "1",
-    "topics": "keluaran",
+    "topics": "kafka-postres-topic",
     "transforms": "unwrap",
     "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
     "transforms.unwrap.drop.tombstones": "false"

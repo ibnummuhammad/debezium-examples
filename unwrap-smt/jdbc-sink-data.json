@@ -92,7 +92,7 @@
       "etl_id": "2022-10-10-11",
       "etl_id_ts": "ibnu_muhammad@gmail.com",
       "etl_id_partition": 1698224979,
-      "run_ts": "lari"
+      "run_ts": "2022-10-10 11:30:30"
     },
     "source": {
       "version": "2.1.4.Final",

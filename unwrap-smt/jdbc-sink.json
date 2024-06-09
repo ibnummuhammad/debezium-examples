@@ -16,8 +16,12 @@
 
     "tasks.max": "1",
     "topics": "kafka-postres-topic",
-    "transforms": "unwrap",
+    "transforms": "unwrap,timestampConverter",
     "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
-    "transforms.unwrap.drop.tombstones": "false"
+    "transforms.unwrap.drop.tombstones": "false",
+    "transforms.timestampConverter.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.timestampConverter.field": "run_ts",
+    "transforms.timestampConverter.format": "yyyy-MM-dd HH:mm:ss",
+    "transforms.timestampConverter.target.type": "Timestamp"
   }
 }

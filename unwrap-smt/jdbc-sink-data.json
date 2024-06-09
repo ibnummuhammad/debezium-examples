@@ -90,7 +90,7 @@
       "params": "{\"id\": 1008,\"first_name\": \"bapercobaan\",\"last_name\": \"bapertama\",\"email\": \"batesting@email\"}",
       "payload": "{\"id\": 1008,\"first_name\": \"bapercobaan\",\"last_name\": \"bapertama\",\"email\": \"batesting@email\"}",
       "etl_id": "2022-10-10-11",
-      "etl_id_ts": "ibnu_muhammad@gmail.com",
+      "etl_id_ts": "2022-10-10 11:30:30",
       "etl_id_partition": 1698224979,
       "run_ts": "2022-10-10 11:30:30"
     },

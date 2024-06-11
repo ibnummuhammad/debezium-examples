@@ -10,12 +10,13 @@
     "insert.mode": "insert",
     "delete.enabled": "false",
 
-    "table.name.format": "data_warehouse.hoi.testingnama",
+    "table.name.format": "data_warehouse.development_ibnu_muhammad.ekyc_pipeline_rt",
 
     "auto.create": "true",
 
     "tasks.max": "1",
     "topics": "kafka-postres-topic",
+
     "transforms": "unwrap,timestampConverter,timestampConverter1",
     "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
     "transforms.unwrap.drop.tombstones": "false",

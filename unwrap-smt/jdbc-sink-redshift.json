@@ -1,0 +1,23 @@
+{
+  "name": "jdbc-sink-redshift",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+
+    "connection.url": "",
+    "connection.user": "",
+    "connection.password": "",
+
+    "insert.mode": "insert",
+    "delete.enabled": "false",
+
+    "table.name.format": "data_warehouse.development_ibnu_muhammad.atestingkafka",
+
+    "auto.create": "true",
+
+    "tasks.max": "1",
+    "topics": "coba",
+    "transforms": "unwrap",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms.unwrap.drop.tombstones": "false"
+  }
+}

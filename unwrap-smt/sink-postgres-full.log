@@ -1,14 +1,66 @@
-2024-06-15 11:22:07,597 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,597 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,597 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,597 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,601 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,601 INFO   ||  Started KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,601 INFO   ||  Finished reading offsets topic and starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
-2024-06-15 11:22:07,604 INFO   ||  Worker started   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:22:07,604 INFO   ||  Starting KafkaBasedLog with topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,667 INFO   ||  Created topic (name=my_source_connect_statuses, numPartitions=5, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
-2024-06-15 11:22:07,668 INFO   ||  ProducerConfig values:
+2024-06-15 12:23:33,526 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-06-15 12:23:33,526 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,526 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,526 INFO   ||  Kafka startTimeMs: 1718454213526   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,541 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:33,549 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Assigned to partition(s): my_connect_offsets-0, my_connect_offsets-5, my_connect_offsets-10, my_connect_offsets-20, my_connect_offsets-15, my_connect_offsets-9, my_connect_offsets-11, my_connect_offsets-4, my_connect_offsets-16, my_connect_offsets-17, my_connect_offsets-3, my_connect_offsets-24, my_connect_offsets-23, my_connect_offsets-13, my_connect_offsets-18, my_connect_offsets-22, my_connect_offsets-8, my_connect_offsets-2, my_connect_offsets-12, my_connect_offsets-19, my_connect_offsets-14, my_connect_offsets-1, my_connect_offsets-6, my_connect_offsets-7, my_connect_offsets-21   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-06-15 12:23:33,550 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-5   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-10   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-20   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-15   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-9   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-11   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-16   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-17   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-24   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-23   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-13   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-18   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-22   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-8   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-12   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-19   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,551 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-14   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,552 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,552 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-6   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,552 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-7   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,552 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-21   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,623 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-18 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-20 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-22 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-24 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-12 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-14 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-16 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,624 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,625 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,625 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,625 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-19 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,625 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-21 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,625 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-23 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,626 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,626 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,626 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,626 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,628 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,628 INFO   ||  Started KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,628 INFO   ||  Finished reading offsets topic and starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
+2024-06-15 12:23:33,633 INFO   ||  Worker started   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:23:33,633 INFO   ||  Starting KafkaBasedLog with topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,850 INFO   ||  Created topic (name=my_source_connect_statuses, numPartitions=5, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-06-15 12:23:33,851 INFO   ||  ProducerConfig values:
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -100,12 +152,12 @@
 	transactional.id = null
 	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
    [org.apache.kafka.clients.producer.ProducerConfig]
-2024-06-15 11:22:07,668 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
-2024-06-15 11:22:07,671 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
-2024-06-15 11:22:07,672 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,672 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,672 INFO   ||  Kafka startTimeMs: 1718450527672   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,673 INFO   ||  ConsumerConfig values:
+2024-06-15 12:23:33,851 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-06-15 12:23:33,855 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-06-15 12:23:33,855 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,855 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,855 INFO   ||  Kafka startTimeMs: 1718454213855   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,856 INFO   ||  ConsumerConfig values:
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -203,30 +255,30 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
    [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:22:07,673 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
-2024-06-15 11:22:07,675 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:22:07,676 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,676 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,676 INFO   ||  Kafka startTimeMs: 1718450527676   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,678 INFO   ||  [Producer clientId=1-statuses] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:22:07,681 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Assigned to partition(s): my_source_connect_statuses-0, my_source_connect_statuses-4, my_source_connect_statuses-1, my_source_connect_statuses-2, my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,682 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,691 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,691 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,691 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,691 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,691 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,692 INFO   ||  Finished reading KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,692 INFO   ||  Started KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,696 INFO   ||  Starting KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
-2024-06-15 11:22:07,696 INFO   ||  Starting KafkaBasedLog with topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,724 INFO   ||  Created topic (name=my_connect_configs, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
-2024-06-15 11:22:07,725 INFO   ||  ProducerConfig values:
+2024-06-15 12:23:33,857 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-06-15 12:23:33,863 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-06-15 12:23:33,863 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,863 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,863 INFO   ||  Kafka startTimeMs: 1718454213863   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,869 INFO   ||  [Producer clientId=1-statuses] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:33,871 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Assigned to partition(s): my_source_connect_statuses-0, my_source_connect_statuses-4, my_source_connect_statuses-1, my_source_connect_statuses-2, my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,872 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,896 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,897 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,897 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,897 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,897 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,897 INFO   ||  Finished reading KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,897 INFO   ||  Started KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,914 INFO   ||  Starting KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-06-15 12:23:33,915 INFO   ||  Starting KafkaBasedLog with topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,973 INFO   ||  Created topic (name=my_connect_configs, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-06-15 12:23:33,973 INFO   ||  ProducerConfig values:
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -318,12 +370,12 @@
 	transactional.id = null
 	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
    [org.apache.kafka.clients.producer.ProducerConfig]
-2024-06-15 11:22:07,725 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
-2024-06-15 11:22:07,728 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
-2024-06-15 11:22:07,728 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,728 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,728 INFO   ||  Kafka startTimeMs: 1718450527728   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,729 INFO   ||  ConsumerConfig values:
+2024-06-15 12:23:33,974 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-06-15 12:23:33,977 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-06-15 12:23:33,977 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,977 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,977 INFO   ||  Kafka startTimeMs: 1718454213977   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,978 INFO   ||  ConsumerConfig values:
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -421,43 +473,43 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
    [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:22:07,729 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
-2024-06-15 11:22:07,732 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:22:07,732 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,732 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,732 INFO   ||  Kafka startTimeMs: 1718450527732   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:22:07,732 INFO   ||  [Producer clientId=1-configs] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:22:07,735 INFO   ||  [Consumer clientId=1-configs, groupId=1] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:22:07,736 INFO   ||  [Consumer clientId=1-configs, groupId=1] Assigned to partition(s): my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
-2024-06-15 11:22:07,736 INFO   ||  [Consumer clientId=1-configs, groupId=1] Seeking to earliest offset of partition my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,742 INFO   ||  [Consumer clientId=1-configs, groupId=1] Resetting offset for partition my_connect_configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:22:07,743 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,743 INFO   ||  Started KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
-2024-06-15 11:22:07,743 INFO   ||  Started KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
-2024-06-15 11:22:07,743 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Herder started   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:22:07,750 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:22:08,399 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:08,401 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:08,402 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:08,417 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:11,433 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=1, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:11,480 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=1, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:22:11,480 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', leaderUrl='http://192.168.240.6:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:22:11,481 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Starting connectors and tasks using config offset -1   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:22:11,481 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:22:11,523 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Session key updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,575 INFO   ||  AbstractConfig values:
+2024-06-15 12:23:33,979 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-06-15 12:23:33,982 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-06-15 12:23:33,982 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,982 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,982 INFO   ||  Kafka startTimeMs: 1718454213982   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:23:33,982 INFO   ||  [Producer clientId=1-configs] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:33,988 INFO   ||  [Consumer clientId=1-configs, groupId=1] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:33,988 INFO   ||  [Consumer clientId=1-configs, groupId=1] Assigned to partition(s): my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-06-15 12:23:33,988 INFO   ||  [Consumer clientId=1-configs, groupId=1] Seeking to earliest offset of partition my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,994 INFO   ||  [Consumer clientId=1-configs, groupId=1] Resetting offset for partition my_connect_configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-06-15 12:23:33,994 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,994 INFO   ||  Started KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-06-15 12:23:33,994 INFO   ||  Started KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-06-15 12:23:33,994 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Herder started   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:23:34,002 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:23:34,722 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:34,725 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:34,725 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:34,749 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:37,766 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=1, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:37,827 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=1, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:23:37,827 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', leaderUrl='http://172.20.0.6:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:23:37,828 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Starting connectors and tasks using config offset -1   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:23:37,828 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:23:37,898 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Session key updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,437 INFO   ||  AbstractConfig values:
    [org.apache.kafka.common.config.AbstractConfig]
-2024-06-15 11:23:05,585 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Connector jdbc-sink config updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,586 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,586 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,589 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=2, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,593 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=2, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,593 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', leaderUrl='http://192.168.240.6:8083/', offset=2, connectorIds=[jdbc-sink], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,593 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Starting connectors and tasks using config offset 2   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,594 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Starting connector jdbc-sink   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,596 INFO   ||  Creating connector jdbc-sink of type io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,596 INFO   ||  SinkConnectorConfig values:
+2024-06-15 12:26:47,450 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Connector jdbc-sink config updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,451 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,451 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,455 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=2, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,461 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=2, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,461 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', leaderUrl='http://172.20.0.6:8083/', offset=2, connectorIds=[jdbc-sink], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,461 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Starting connectors and tasks using config offset 2   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,462 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Starting connector jdbc-sink   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,465 INFO   ||  Creating connector jdbc-sink of type io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,466 INFO   ||  SinkConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -478,7 +530,7 @@
 	transforms = [unwrap, timestampConverter, timestampConverter1]
 	value.converter = null
    [org.apache.kafka.connect.runtime.SinkConnectorConfig]
-2024-06-15 11:23:05,597 INFO   ||  EnrichedConnectorConfig values:
+2024-06-15 12:26:47,466 INFO   ||  EnrichedConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -526,10 +578,10 @@
 	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
 	value.converter = null
    [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
-2024-06-15 11:23:05,599 INFO   ||  Instantiated connector jdbc-sink with version 10.7.6 of type class io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,599 INFO   ||  Finished creating connector jdbc-sink   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,600 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,606 INFO   ||  SinkConnectorConfig values:
+2024-06-15 12:26:47,469 INFO   ||  Instantiated connector jdbc-sink with version 10.7.6 of type class io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,470 INFO   ||  Finished creating connector jdbc-sink   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,470 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,477 INFO   ||  SinkConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -550,7 +602,7 @@
 	transforms = [unwrap, timestampConverter, timestampConverter1]
 	value.converter = null
    [org.apache.kafka.connect.runtime.SinkConnectorConfig]
-2024-06-15 11:23:05,607 INFO   ||  EnrichedConnectorConfig values:
+2024-06-15 12:26:47,478 INFO   ||  EnrichedConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -598,18 +650,18 @@
 	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
 	value.converter = null
    [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
-2024-06-15 11:23:05,608 INFO   ||  Setting task configurations for 1 workers.   [io.confluent.connect.jdbc.JdbcSinkConnector]
-2024-06-15 11:23:05,616 INFO   ||  192.168.65.1 - - [15/Jun/2024:11:23:05 +0000] "POST /connectors/ HTTP/1.1" 201 1182 "-" "curl/8.6.0" 135   [org.apache.kafka.connect.runtime.rest.RestServer]
-2024-06-15 11:23:05,622 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Tasks [jdbc-sink-0] configs updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,626 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,626 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,627 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=3, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,631 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=3, memberId='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
-2024-06-15 11:23:05,631 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-192.168.240.6:8083-eefb09d4-7778-4099-a13a-0de169988323', leaderUrl='http://192.168.240.6:8083/', offset=4, connectorIds=[jdbc-sink], taskIds=[jdbc-sink-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,632 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Starting connectors and tasks using config offset 4   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,632 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Starting task jdbc-sink-0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,634 INFO   ||  Creating task jdbc-sink-0   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,635 INFO   ||  ConnectorConfig values:
+2024-06-15 12:26:47,479 INFO   ||  Setting task configurations for 1 workers.   [io.confluent.connect.jdbc.JdbcSinkConnector]
+2024-06-15 12:26:47,491 INFO   ||  192.168.65.1 - - [15/Jun/2024:12:26:47 +0000] "POST /connectors/ HTTP/1.1" 201 1182 "-" "curl/8.6.0" 184   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-06-15 12:26:47,495 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Tasks [jdbc-sink-0] configs updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,500 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,500 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,501 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=3, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,506 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=3, memberId='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-06-15 12:26:47,506 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.20.0.6:8083-add43ced-3dbe-40fc-a8a7-fc37143a78d3', leaderUrl='http://172.20.0.6:8083/', offset=4, connectorIds=[jdbc-sink], taskIds=[jdbc-sink-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,507 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Starting connectors and tasks using config offset 4   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,507 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Starting task jdbc-sink-0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,511 INFO   ||  Creating task jdbc-sink-0   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,512 INFO   ||  ConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.log.enable = false
@@ -625,7 +677,7 @@
 	transforms = [unwrap, timestampConverter, timestampConverter1]
 	value.converter = null
    [org.apache.kafka.connect.runtime.ConnectorConfig]
-2024-06-15 11:23:05,635 INFO   ||  EnrichedConnectorConfig values:
+2024-06-15 12:26:47,512 INFO   ||  EnrichedConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.log.enable = false
@@ -668,30 +720,30 @@
 	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
 	value.converter = null
    [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
-2024-06-15 11:23:05,636 INFO   ||  TaskConfig values:
+2024-06-15 12:26:47,514 INFO   ||  TaskConfig values:
 	task.class = class io.confluent.connect.jdbc.sink.JdbcSinkTask
    [org.apache.kafka.connect.runtime.TaskConfig]
-2024-06-15 11:23:05,637 INFO   ||  Instantiated task jdbc-sink-0 with version 10.7.6 of type io.confluent.connect.jdbc.sink.JdbcSinkTask   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,637 INFO   ||  JsonConverterConfig values:
+2024-06-15 12:26:47,514 INFO   ||  Instantiated task jdbc-sink-0 with version 10.7.6 of type io.confluent.connect.jdbc.sink.JdbcSinkTask   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,514 INFO   ||  JsonConverterConfig values:
 	converter.type = key
 	decimal.format = BASE64
 	replace.null.with.default = true
 	schemas.cache.size = 1000
 	schemas.enable = true
    [org.apache.kafka.connect.json.JsonConverterConfig]
-2024-06-15 11:23:05,637 INFO   ||  Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,638 INFO   ||  JsonConverterConfig values:
+2024-06-15 12:26:47,514 INFO   ||  Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,515 INFO   ||  JsonConverterConfig values:
 	converter.type = value
 	decimal.format = BASE64
 	replace.null.with.default = true
 	schemas.cache.size = 1000
 	schemas.enable = true
    [org.apache.kafka.connect.json.JsonConverterConfig]
-2024-06-15 11:23:05,638 INFO   ||  Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,638 INFO   ||  Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,644 WARN   ||  The deleted record handling configs "drop.tombstones" and "delete.handling.mode" have been deprecated, please use "delete.tombstone.handling.mode" instead.   [io.debezium.transforms.AbstractExtractNewRecordState]
-2024-06-15 11:23:05,645 INFO   ||  Initializing: org.apache.kafka.connect.runtime.TransformationChain{io.debezium.transforms.ExtractNewRecordState, org.apache.kafka.connect.transforms.TimestampConverter$Value, org.apache.kafka.connect.transforms.TimestampConverter$Value}   [org.apache.kafka.connect.runtime.Worker]
-2024-06-15 11:23:05,645 INFO   ||  SinkConnectorConfig values:
+2024-06-15 12:26:47,515 INFO   ||  Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,515 INFO   ||  Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task jdbc-sink-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,524 WARN   ||  The deleted record handling configs "drop.tombstones" and "delete.handling.mode" have been deprecated, please use "delete.tombstone.handling.mode" instead.   [io.debezium.transforms.AbstractExtractNewRecordState]
+2024-06-15 12:26:47,525 INFO   ||  Initializing: org.apache.kafka.connect.runtime.TransformationChain{io.debezium.transforms.ExtractNewRecordState, org.apache.kafka.connect.transforms.TimestampConverter$Value, org.apache.kafka.connect.transforms.TimestampConverter$Value}   [org.apache.kafka.connect.runtime.Worker]
+2024-06-15 12:26:47,525 INFO   ||  SinkConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -712,7 +764,7 @@
 	transforms = [unwrap, timestampConverter, timestampConverter1]
 	value.converter = null
    [org.apache.kafka.connect.runtime.SinkConnectorConfig]
-2024-06-15 11:23:05,646 INFO   ||  EnrichedConnectorConfig values:
+2024-06-15 12:26:47,527 INFO   ||  EnrichedConnectorConfig values:
 	config.action.reload = restart
 	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
 	errors.deadletterqueue.context.headers.enable = false
@@ -760,7 +812,7 @@
 	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
 	value.converter = null
    [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
-2024-06-15 11:23:05,646 INFO   ||  ConsumerConfig values:
+2024-06-15 12:26:47,528 INFO   ||  ConsumerConfig values:
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -858,15 +910,15 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
    [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:23:05,647 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
-2024-06-15 11:23:05,650 INFO   ||  These configurations '[metrics.context.connect.kafka.cluster.id, metrics.context.connect.group.id]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
-2024-06-15 11:23:05,650 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:23:05,650 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:23:05,650 INFO   ||  Kafka startTimeMs: 1718450585650   [org.apache.kafka.common.utils.AppInfoParser]
-2024-06-15 11:23:05,658 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Subscribed to topic(s): topic-kafka-postgres   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
-2024-06-15 11:23:05,659 INFO   ||  [Worker clientId=connect-192.168.240.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
-2024-06-15 11:23:05,662 INFO   ||  Starting JDBC Sink task   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
-2024-06-15 11:23:05,662 INFO   ||  JdbcSinkConfig values:
+2024-06-15 12:26:47,529 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-06-15 12:26:47,533 INFO   ||  These configurations '[metrics.context.connect.kafka.cluster.id, metrics.context.connect.group.id]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-06-15 12:26:47,533 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:26:47,533 INFO   ||  Kafka commitId: 2ae524ed625438c5   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:26:47,533 INFO   ||  Kafka startTimeMs: 1718454407533   [org.apache.kafka.common.utils.AppInfoParser]
+2024-06-15 12:26:47,543 INFO   ||  [Worker clientId=connect-172.20.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-06-15 12:26:47,544 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Subscribed to topic(s): topic-kafka-postgres   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-06-15 12:26:47,545 INFO   ||  Starting JDBC Sink task   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,545 INFO   ||  JdbcSinkConfig values:
 	auto.create = true
 	auto.evolve = false
 	batch.size = 3000
@@ -891,133 +943,63 @@
 	table.types = [TABLE]
 	trim.sensitive.log = false
    [io.confluent.connect.jdbc.sink.JdbcSinkConfig]
-2024-06-15 11:23:05,663 INFO   ||  Initializing JDBC writer   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
-2024-06-15 11:23:05,663 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
-2024-06-15 11:23:05,663 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
-2024-06-15 11:23:05,667 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
-2024-06-15 11:23:05,667 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
-2024-06-15 11:23:05,668 INFO   ||  Initializing writer using SQL dialect: PostgreSqlDatabaseDialect   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
-2024-06-15 11:23:05,669 INFO   ||  JDBC writer initialized   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
-2024-06-15 11:23:05,670 INFO   ||  WorkerSinkTask{id=jdbc-sink-0} Sink task finished initialization and start   [org.apache.kafka.connect.runtime.WorkerSinkTask]
-2024-06-15 11:23:05,671 INFO   ||  WorkerSinkTask{id=jdbc-sink-0} Executing sink task   [org.apache.kafka.connect.runtime.WorkerSinkTask]
-2024-06-15 11:23:05,689 WARN   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Error while fetching metadata with correlation id 2 : {topic-kafka-postgres=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
-2024-06-15 11:23:05,689 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Cluster ID: vNJwZ5dsSx-aSHRkcUZ8eQ   [org.apache.kafka.clients.Metadata]
-2024-06-15 11:23:05,689 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:05,691 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:05,697 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-jdbc-sink-0-9100e484-483d-4d10-befc-b0c1df4f8ecb   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:05,698 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,710 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully joined group with generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-0-9100e484-483d-4d10-befc-b0c1df4f8ecb', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,719 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Finished assignment for group at generation 1: {connector-consumer-jdbc-sink-0-9100e484-483d-4d10-befc-b0c1df4f8ecb=Assignment(partitions=[topic-kafka-postgres-0])}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,725 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully synced group in generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-0-9100e484-483d-4d10-befc-b0c1df4f8ecb', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,725 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Notifying assignor about the new Assignment(partitions=[topic-kafka-postgres-0])   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,726 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Adding newly assigned partitions: topic-kafka-postgres-0   [org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker]
-2024-06-15 11:23:08,738 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Found no committed offset for partition topic-kafka-postgres-0   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
-2024-06-15 11:23:08,740 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Resetting offset for partition topic-kafka-postgres-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
-2024-06-15 11:23:35,892 INFO   ||  Maximum table name length for database is 63 bytes   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,892 INFO   ||  JdbcDbWriter Connected   [io.confluent.connect.jdbc.sink.JdbcDbWriter]
-2024-06-15 11:23:35,901 INFO   ||  maju...   [io.confluent.connect.jdbc.sink.BufferedRecords]
-2024-06-15 11:23:35,901 INFO   ||  ...fieldsMetadata: FieldsMetadata{keyFieldNames=[], nonKeyFieldNames=[params, payload, etl_id, etl_id_ts, etl_id_partition, run_ts], allFields={params=SinkRecordField{schema=Schema{STRING}, name='params', isPrimaryKey=false}, payload=SinkRecordField{schema=Schema{STRING}, name='payload', isPrimaryKey=false}, etl_id=SinkRecordField{schema=Schema{STRING}, name='etl_id', isPrimaryKey=false}, etl_id_ts=SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='etl_id_ts', isPrimaryKey=false}, etl_id_partition=SinkRecordField{schema=Schema{INT64}, name='etl_id_partition', isPrimaryKey=false}, run_ts=SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='run_ts', isPrimaryKey=false}}}   [io.confluent.connect.jdbc.sink.BufferedRecords]
-FieldsMetadata{keyFieldNames=[], nonKeyFieldNames=[params, payload, etl_id, etl_id_ts, etl_id_partition, run_ts], allFields={params=SinkRecordField{schema=Schema{STRING}, name='params', isPrimaryKey=false}, payload=SinkRecordField{schema=Schema{STRING}, name='payload', isPrimaryKey=false}, etl_id=SinkRecordField{schema=Schema{STRING}, name='etl_id', isPrimaryKey=false}, etl_id_ts=SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='etl_id_ts', isPrimaryKey=false}, etl_id_partition=SinkRecordField{schema=Schema{INT64}, name='etl_id_partition', isPrimaryKey=false}, run_ts=SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='run_ts', isPrimaryKey=false}}}
-2024-06-15 11:23:35,901 INFO   ||  masuk tableExists...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,902 INFO   ||  Checking PostgreSql dialect for existence of TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt"   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,902 INFO   ||  keluar tableExists...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,907 INFO   ||  Using PostgreSql dialect TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt" absent   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,907 INFO   ||  masuk buildCreateTableStatement()...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,907 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): null   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): params   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{STRING}, name='params', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): null   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{STRING}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): params   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: TEXT   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): null   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): payload   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{STRING}, name='payload', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): null   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{STRING}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): payload   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: TEXT   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): null   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): etl_id   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{STRING}, name='etl_id', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): null   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): STRING   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{STRING}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): etl_id   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: TEXT   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): org.apache.kafka.connect.data.Timestamp   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): etl_id_ts   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='etl_id_ts', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): org.apache.kafka.connect.data.Timestamp   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{org.apache.kafka.connect.data.Timestamp:INT64}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): etl_id_ts   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: TIMESTAMP   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): null   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): etl_id_partition   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{INT64}, name='etl_id_partition', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): null   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{INT64}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): etl_id_partition   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: BIGINT   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  testingg1...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaName(): org.apache.kafka.connect.data.Timestamp   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...f.name(): run_ts   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  masuk getSqlType() PostgreSqlDatabaseDialect...   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field: SinkRecordField{schema=Schema{org.apache.kafka.connect.data.Timestamp:INT64}, name='run_ts', isPrimaryKey=false}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaName(): org.apache.kafka.connect.data.Timestamp   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schemaType(): INT64   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.schema(): Schema{org.apache.kafka.connect.data.Timestamp:INT64}   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.name(): run_ts   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...PSDD | field.isPrimaryKey(): false   [io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar ...String sqlType = getSqlType(f);...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  ...sqlType: TIMESTAMP   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  keluar buildCreateTableStatement()...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,908 INFO   ||  Creating table with sql: CREATE TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt" (
-"params" TEXT NOT NULL,
-"payload" TEXT NOT NULL,
-"etl_id" TEXT NOT NULL,
-"etl_id_ts" TIMESTAMP NOT NULL,
-"etl_id_partition" BIGINT NOT NULL,
-"run_ts" TIMESTAMP NOT NULL)   [io.confluent.connect.jdbc.sink.DbStructure]
-2024-06-15 11:23:35,913 INFO   ||  masuk tableExists...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,913 INFO   ||  Checking PostgreSql dialect for existence of TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt"   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,913 INFO   ||  keluar tableExists...   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,914 INFO   ||  Using PostgreSql dialect TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt" present   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,920 INFO   ||  Checking PostgreSql dialect for type of TABLE "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt"   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
-2024-06-15 11:23:35,922 INFO   ||  Setting metadata for table "data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt" to Table{name='"data_warehouse"."development_ibnu_muhammad"."ekyc_pipeline_rt"', type=TABLE columns=[Column{'payload', isPrimaryKey=false, allowsNull=false, sqlType=text}, Column{'etl_id_partition', isPrimaryKey=false, allowsNull=false, sqlType=int8}, Column{'params', isPrimaryKey=false, allowsNull=false, sqlType=text}, Column{'run_ts', isPrimaryKey=false, allowsNull=false, sqlType=timestamp}, Column{'etl_id_ts', isPrimaryKey=false, allowsNull=false, sqlType=timestamp}, Column{'etl_id', isPrimaryKey=false, allowsNull=false, sqlType=text}]}   [io.confluent.connect.jdbc.util.TableDefinitions]
+2024-06-15 12:26:47,546 INFO   ||  masuk initWriter()...   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  ...config: io.confluent.connect.jdbc.sink.JdbcSinkConfig@b30f2e3c   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  ...config.dialectName:    [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  ...config.dialectName.trim():    [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  ...config.dialectName.trim().isEmpty(): true   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  ...config.connectionUrl: jdbc:postgresql://postgres:5432/data_warehouse   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  Initializing JDBC writer   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,546 INFO   ||  masuk findBestFor()....   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,546 INFO   ||  ...findBestFor | jdbcUrl: jdbc:postgresql://postgres:5432/data_warehouse   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,546 INFO   ||  ...findBestFor | config: io.confluent.connect.jdbc.sink.JdbcSinkConfig@b30f2e3c   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,546 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,546 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Finding best dialect for JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...findBestFor | bestScore: 0   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...findBestFor | bestMatch...1: null   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect Db2DatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: null | bestScore 0   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect DerbyDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: null | bestScore 0   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect GenericDatabaseDialect scored 10 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: GenericDatabaseDialect | bestScore 10   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect MySqlDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: GenericDatabaseDialect | bestScore 10   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect OracleDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: GenericDatabaseDialect | bestScore 10   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect PostgreSqlDatabaseDialect scored 100 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect SapHanaDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect SqlServerDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect SqliteDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect SybaseDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Dialect VerticaDatabaseDialect scored 0 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  ...bestMatch: PostgreSqlDatabaseDialect | bestScore 100   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,547 INFO   ||  Using dialect PostgreSqlDatabaseDialect with score 100 against JDBC subprotocol 'postgresql' and source 'jdbc:postgresql://postgres:5432/data_warehouse'   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,549 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,549 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-06-15 12:26:47,549 INFO   ||  ...dialect: PostgreSql   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,549 INFO   ||  ...dialect.getClass(): class io.confluent.connect.jdbc.dialect.PostgreSqlDatabaseDialect   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,549 INFO   ||  ...dialect.getClass().getSimpleName(): PostgreSqlDatabaseDialect   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,550 INFO   ||  Initializing writer using SQL dialect: PostgreSqlDatabaseDialect   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,550 INFO   ||  JDBC writer initialized   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-06-15 12:26:47,550 INFO   ||  WorkerSinkTask{id=jdbc-sink-0} Sink task finished initialization and start   [org.apache.kafka.connect.runtime.WorkerSinkTask]
+2024-06-15 12:26:47,551 INFO   ||  WorkerSinkTask{id=jdbc-sink-0} Executing sink task   [org.apache.kafka.connect.runtime.WorkerSinkTask]
+2024-06-15 12:26:47,570 WARN   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Error while fetching metadata with correlation id 2 : {topic-kafka-postgres=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-06-15 12:26:47,570 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Cluster ID: Yhw9KJd_QVCOLwgKAjhyXQ   [org.apache.kafka.clients.Metadata]
+2024-06-15 12:26:47,571 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:47,572 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:47,578 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-jdbc-sink-0-993ca757-3056-442e-a9e5-3021ac3f8fc7   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:47,578 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,587 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully joined group with generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-0-993ca757-3056-442e-a9e5-3021ac3f8fc7', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,595 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Finished assignment for group at generation 1: {connector-consumer-jdbc-sink-0-993ca757-3056-442e-a9e5-3021ac3f8fc7=Assignment(partitions=[topic-kafka-postgres-0])}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,600 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Successfully synced group in generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-0-993ca757-3056-442e-a9e5-3021ac3f8fc7', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,600 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Notifying assignor about the new Assignment(partitions=[topic-kafka-postgres-0])   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,600 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Adding newly assigned partitions: topic-kafka-postgres-0   [org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker]
+2024-06-15 12:26:50,615 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Found no committed offset for partition topic-kafka-postgres-0   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-06-15 12:26:50,616 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-0, groupId=connect-jdbc-sink] Resetting offset for partition topic-kafka-postgres-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]

@@ -124,10 +124,10 @@ Connect database to kafka:
 
 ```shell
 # Start MySQL connector
-curl --include -X POST -H "Accept:application/json" -H "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/source.json
+curl --include -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ --data @unwrap-smt/source.json
 
 # Start PostgreSQL connector
-curl --include -X POST -H "Accept:application/json" -H "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/jdbc-sink-redshift.json
+curl --include -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ --data @unwrap-smt/jdbc-sink-redshift.json
 ```
 
 View list of kafka connect:
@@ -170,7 +170,7 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 
 Open kafka-console-producer without key:
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic topic-kafka-redshift"
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c 'export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic topic-kafka-redshift'
 ```
 
 Insert message in kafka-console-producer without key:
@@ -181,7 +181,7 @@ Insert message in kafka-console-producer without key:
 
 Open kafka-console-producer without key:
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c "export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic topic-kafka-redshift"
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c 'export JMX_PORT=0 && /opt/bitnami/kafka/bin/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic topic-kafka-redshift'
 ```
 
 Insert message in kafka-console-producer without key and json data:
@@ -335,11 +335,11 @@ docker compose -f docker-compose-es.yaml up --build
 
 # Start Elasticsearch connector
 
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @es-sink.json
+curl -i -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ -d @es-sink.json
 
 # Start MySQL connector
 
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @source.json
+curl -i -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ -d @source.json
 
 ```
 
@@ -626,13 +626,13 @@ export DEBEZIUM_VERSION=2.1
 docker compose up --build
 
 # Start Elasticsearch connector
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @es-sink.json
+curl -i -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ -d @es-sink.json
 
 # Start MySQL connector
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @source.json
+curl -i -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ -d @source.json
 
 # Start PostgreSQL connector
-curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @jdbc-sink.json
+curl -i -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ -d @jdbc-sink.json
 ```
 
 Now you can execute commands as defined in the sections for JDBC and Elasticsearch sinks and you can verify that inserts and updates are present in *both* sinks.

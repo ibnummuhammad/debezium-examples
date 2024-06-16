@@ -39,7 +39,7 @@ services:
       - POSTGRES_PASSWORD=postgrespw
       - POSTGRES_DB=data_warehouse
   connect:
-    image: debezium/connect-jdbc:2.8.10
+    image: debezium/connect-jdbc:2.8.12
     build:
       context: debezium-jdbc-es
       dockerfile: debezium-jdbc.Dockerfile

@@ -124,10 +124,10 @@ Connect database to kafka:
 
 ```shell
 # Start MySQL connector
-curl --include -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/source.json
+curl --include -X POST -H "Accept:application/json" -H "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/source.json
 
 # Start PostgreSQL connector
-curl --include -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/jdbc-sink.json
+curl --include -X POST -H "Accept:application/json" -H "Content-Type:application/json" http://localhost:8083/connectors/ --data @unwrap-smt/jdbc-sink-redshift.json
 ```
 
 View list of kafka connect:

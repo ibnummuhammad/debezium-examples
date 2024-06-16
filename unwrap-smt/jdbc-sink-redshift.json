@@ -10,14 +10,23 @@
     "insert.mode": "insert",
     "delete.enabled": "false",
 
-    "table.name.format": "data_warehouse.development_ibnu_muhammad.atestingkafka",
+    "table.name.format": "data_warehouse.development_ibnu_muhammad.testingkafka_d",
 
     "auto.create": "true",
 
     "tasks.max": "1",
     "topics": "topic-kafka-redshift",
-    "transforms": "unwrap",
+
+    "transforms": "unwrap,timestampConverter,timestampConverter1",
     "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
-    "transforms.unwrap.drop.tombstones": "false"
+    "transforms.unwrap.drop.tombstones": "false",
+    "transforms.timestampConverter.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.timestampConverter.field": "run_ts",
+    "transforms.timestampConverter.format": "yyyy-MM-dd HH:mm:ss",
+    "transforms.timestampConverter.target.type": "Timestamp",
+    "transforms.timestampConverter1.type": "org.apache.kafka.connect.transforms.TimestampConverter$Value",
+    "transforms.timestampConverter1.field": "etl_id_ts",
+    "transforms.timestampConverter1.format": "yyyy-MM-dd HH:mm:ss",
+    "transforms.timestampConverter1.target.type": "Timestamp"
   }
 }

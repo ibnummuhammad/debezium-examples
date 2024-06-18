@@ -61,11 +61,17 @@ We are using Docker Compose to deploy following components
 
 ### Usage
 
+How to build connect image:
+
+```shell
+cd unwrap-smt/debezium-jdbc-es
+docker build --no-cache --file debezium-jdbc.Dockerfile . --tag ibnummuhammad/debezium-connect-jdbc:2.8.14
+```
+
 How to run:
 
 ```shell
 # Start the application
-export DEBEZIUM_VERSION=2.1
 docker-compose --file unwrap-smt/docker-compose-jdbc.yaml up --detach --build
 ```
 

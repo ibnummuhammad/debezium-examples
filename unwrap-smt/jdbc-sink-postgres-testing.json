@@ -1,0 +1,32 @@
+{
+  "name": "jdbc-sink-postgres",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+
+    "connection.url": "jdbc:postgresql://postgres:5432/data_warehouse",
+    "connection.user": "postgresuser",
+    "connection.password": "postgrespw",
+
+    "insert.mode": "insert",
+    "delete.enabled": "false",
+
+    "table.name.format": "data_warehouse.development_ibnu_muhammad.ekyc_pipeline_rt",
+
+    "auto.create": "true",
+
+    "tasks.max": "1",
+    "topics": "topic-kafka-postgres",
+
+    "transforms": "unwrap,timestampConverter,timestampConverter1",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms.unwrap.drop.tombstones": "false",
+    "transforms.timestampConverter.type": "org.apache.kafka.connect.transforms.JsonbConverter$Value",
+    "transforms.timestampConverter.field": "run_ts",
+    "transforms.timestampConverter.format": "yyyy-MM-dd HH:mm:ss",
+    "transforms.timestampConverter.target.type": "Timestamp",
+    "transforms.timestampConverter1.type": "org.apache.kafka.connect.transforms.JsonbConverter$Value",
+    "transforms.timestampConverter1.field": "etl_id_ts",
+    "transforms.timestampConverter1.format": "yyyy-MM-dd HH:mm:ss",
+    "transforms.timestampConverter1.target.type": "Timestamp"
+  }
+}

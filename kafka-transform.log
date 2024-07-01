@@ -1,0 +1,990 @@
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,250 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-19 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-21 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-23 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,251 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,251 INFO   ||  Started KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,251 INFO   ||  Finished reading offsets topic and starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
+2024-07-01 13:02:21,253 INFO   ||  Worker started   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:21,253 INFO   ||  Starting KafkaBasedLog with topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,316 INFO   ||  Created topic (name=my_source_connect_statuses, numPartitions=5, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-07-01 13:02:21,317 INFO   ||  ProducerConfig values:
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-statuses
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-07-01 13:02:21,317 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-07-01 13:02:21,321 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-07-01 13:02:21,322 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,322 INFO   ||  Kafka commitId: f265e3a1f5f24b3d   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,322 INFO   ||  Kafka startTimeMs: 1719838941322   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,322 INFO   ||  ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-statuses
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:21,323 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-07-01 13:02:21,330 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:21,331 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,331 INFO   ||  Kafka commitId: f265e3a1f5f24b3d   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,331 INFO   ||  Kafka startTimeMs: 1719838941331   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,332 INFO   ||  [Producer clientId=1-statuses] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:21,336 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Assigned to partition(s): my_source_connect_statuses-0, my_source_connect_statuses-4, my_source_connect_statuses-1, my_source_connect_statuses-2, my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,338 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,348 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,349 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,349 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,349 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,349 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,350 INFO   ||  Finished reading KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,350 INFO   ||  Started KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,354 INFO   ||  Starting KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-07-01 13:02:21,355 INFO   ||  Starting KafkaBasedLog with topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,386 INFO   ||  Created topic (name=my_connect_configs, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-07-01 13:02:21,387 INFO   ||  ProducerConfig values:
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-configs
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-07-01 13:02:21,387 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-07-01 13:02:21,390 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-07-01 13:02:21,391 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,391 INFO   ||  Kafka commitId: f265e3a1f5f24b3d   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,391 INFO   ||  Kafka startTimeMs: 1719838941391   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,392 INFO   ||  ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-configs
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:21,393 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-07-01 13:02:21,395 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:21,395 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,395 INFO   ||  Kafka commitId: f265e3a1f5f24b3d   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,395 INFO   ||  Kafka startTimeMs: 1719838941395   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:21,397 INFO   ||  [Producer clientId=1-configs] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:21,399 INFO   ||  [Consumer clientId=1-configs, groupId=1] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:21,400 INFO   ||  [Consumer clientId=1-configs, groupId=1] Assigned to partition(s): my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-07-01 13:02:21,400 INFO   ||  [Consumer clientId=1-configs, groupId=1] Seeking to earliest offset of partition my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,406 INFO   ||  [Consumer clientId=1-configs, groupId=1] Resetting offset for partition my_connect_configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:21,407 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,407 INFO   ||  Started KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-07-01 13:02:21,407 INFO   ||  Started KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-07-01 13:02:21,407 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Herder started   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:21,414 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:22,105 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:22,107 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:22,107 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:22,190 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:25,208 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=1, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:25,257 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=1, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:25,257 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', leaderUrl='http://172.21.0.6:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:25,258 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Starting connectors and tasks using config offset -1   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:25,258 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:25,298 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Session key updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,276 INFO   ||  AbstractConfig values:
+   [org.apache.kafka.common.config.AbstractConfig]
+2024-07-01 13:02:34,286 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Connector jdbc-sink-redshift config updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,287 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,287 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,290 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=2, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,294 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=2, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,294 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', leaderUrl='http://172.21.0.6:8083/', offset=2, connectorIds=[jdbc-sink-redshift], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,295 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Starting connectors and tasks using config offset 2   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,295 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Starting connector jdbc-sink-redshift   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,298 INFO   ||  Creating connector jdbc-sink-redshift of type io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,298 INFO   ||  SinkConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SinkConnectorConfig]
+2024-07-01 13:02:34,299 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	transforms.timestampConverter.field = run_ts
+	transforms.timestampConverter.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter.negate = false
+	transforms.timestampConverter.predicate = null
+	transforms.timestampConverter.target.type = Timestamp
+	transforms.timestampConverter.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter.unix.precision = milliseconds
+	transforms.timestampConverter1.field = etl_id_ts
+	transforms.timestampConverter1.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter1.negate = false
+	transforms.timestampConverter1.predicate = null
+	transforms.timestampConverter1.target.type = Timestamp
+	transforms.timestampConverter1.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter1.unix.precision = milliseconds
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = false
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field =
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-07-01 13:02:34,302 INFO   ||  Instantiated connector jdbc-sink-redshift with version 10.7.6 of type class io.confluent.connect.jdbc.JdbcSinkConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,302 INFO   ||  Finished creating connector jdbc-sink-redshift   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,302 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,310 INFO   ||  SinkConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SinkConnectorConfig]
+2024-07-01 13:02:34,315 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	transforms.timestampConverter.field = run_ts
+	transforms.timestampConverter.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter.negate = false
+	transforms.timestampConverter.predicate = null
+	transforms.timestampConverter.target.type = Timestamp
+	transforms.timestampConverter.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter.unix.precision = milliseconds
+	transforms.timestampConverter1.field = etl_id_ts
+	transforms.timestampConverter1.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter1.negate = false
+	transforms.timestampConverter1.predicate = null
+	transforms.timestampConverter1.target.type = Timestamp
+	transforms.timestampConverter1.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter1.unix.precision = milliseconds
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = false
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field =
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-07-01 13:02:34,317 INFO   ||  Setting task configurations for 1 workers.   [io.confluent.connect.jdbc.JdbcSinkConnector]
+2024-07-01 13:02:34,322 INFO   ||  192.168.65.1 - - [01/Jul/2024:13:02:34 +0000] "POST /connectors/ HTTP/1.1" 201 1278 "-" "curl/8.6.0" 140   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-07-01 13:02:34,337 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Tasks [jdbc-sink-redshift-0] configs updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,337 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,338 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,339 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=3, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,343 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=3, memberId='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-07-01 13:02:34,343 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.21.0.6:8083-38c64164-15e4-4c6f-b02d-4135891726ea', leaderUrl='http://172.21.0.6:8083/', offset=4, connectorIds=[jdbc-sink-redshift], taskIds=[jdbc-sink-redshift-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,344 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Starting connectors and tasks using config offset 4   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,345 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Starting task jdbc-sink-redshift-0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,349 INFO   ||  Creating task jdbc-sink-redshift-0   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,350 INFO   ||  ConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig]
+2024-07-01 13:02:34,351 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	transforms.timestampConverter.field = run_ts
+	transforms.timestampConverter.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter.negate = false
+	transforms.timestampConverter.predicate = null
+	transforms.timestampConverter.target.type = Timestamp
+	transforms.timestampConverter.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter.unix.precision = milliseconds
+	transforms.timestampConverter1.field = etl_id_ts
+	transforms.timestampConverter1.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter1.negate = false
+	transforms.timestampConverter1.predicate = null
+	transforms.timestampConverter1.target.type = Timestamp
+	transforms.timestampConverter1.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter1.unix.precision = milliseconds
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = false
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field =
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-07-01 13:02:34,352 INFO   ||  TaskConfig values:
+	task.class = class io.confluent.connect.jdbc.sink.JdbcSinkTask
+   [org.apache.kafka.connect.runtime.TaskConfig]
+2024-07-01 13:02:34,352 INFO   ||  Instantiated task jdbc-sink-redshift-0 with version 10.7.6 of type io.confluent.connect.jdbc.sink.JdbcSinkTask   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,352 INFO   ||  JsonConverterConfig values:
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+   [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-07-01 13:02:34,353 INFO   ||  Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-redshift-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,353 INFO   ||  JsonConverterConfig values:
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+   [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-07-01 13:02:34,353 INFO   ||  Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task jdbc-sink-redshift-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,353 INFO   ||  Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task jdbc-sink-redshift-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,360 WARN   ||  The deleted record handling configs "drop.tombstones" and "delete.handling.mode" have been deprecated, please use "delete.tombstone.handling.mode" instead.   [io.debezium.transforms.AbstractExtractNewRecordState]
+2024-07-01 13:02:34,361 INFO   ||  Initializing: org.apache.kafka.connect.runtime.TransformationChain{io.debezium.transforms.ExtractNewRecordState, org.apache.kafka.connect.transforms.TimestampConverter$Value, org.apache.kafka.connect.transforms.TimestampConverter$Value}   [org.apache.kafka.connect.runtime.Worker]
+2024-07-01 13:02:34,361 INFO   ||  SinkConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SinkConnectorConfig]
+2024-07-01 13:02:34,362 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.confluent.connect.jdbc.JdbcSinkConnector
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name =
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = jdbc-sink-redshift
+	predicates = []
+	tasks.max = 1
+	topics = [topic-kafka-redshift]
+	topics.regex =
+	transforms = [unwrap, timestampConverter, timestampConverter1]
+	transforms.timestampConverter.field = run_ts
+	transforms.timestampConverter.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter.negate = false
+	transforms.timestampConverter.predicate = null
+	transforms.timestampConverter.target.type = Timestamp
+	transforms.timestampConverter.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter.unix.precision = milliseconds
+	transforms.timestampConverter1.field = etl_id_ts
+	transforms.timestampConverter1.format = yyyy-MM-dd HH:mm:ss
+	transforms.timestampConverter1.negate = false
+	transforms.timestampConverter1.predicate = null
+	transforms.timestampConverter1.target.type = Timestamp
+	transforms.timestampConverter1.type = class org.apache.kafka.connect.transforms.TimestampConverter$Value
+	transforms.timestampConverter1.unix.precision = milliseconds
+	transforms.unwrap.add.fields = []
+	transforms.unwrap.add.fields.prefix = __
+	transforms.unwrap.add.headers = []
+	transforms.unwrap.add.headers.prefix = __
+	transforms.unwrap.delete.handling.mode = drop
+	transforms.unwrap.drop.fields.from.key = false
+	transforms.unwrap.drop.fields.header.name = null
+	transforms.unwrap.drop.fields.keep.schema.compatible = true
+	transforms.unwrap.drop.tombstones = false
+	transforms.unwrap.negate = false
+	transforms.unwrap.predicate = null
+	transforms.unwrap.route.by.field =
+	transforms.unwrap.type = class io.debezium.transforms.ExtractNewRecordState
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-07-01 13:02:34,362 INFO   ||  ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-jdbc-sink-redshift-0
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-jdbc-sink-redshift
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:34,363 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-07-01 13:02:34,367 INFO   ||  These configurations '[metrics.context.connect.kafka.cluster.id, metrics.context.connect.group.id]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-07-01 13:02:34,367 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:34,367 INFO   ||  Kafka commitId: f265e3a1f5f24b3d   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:34,367 INFO   ||  Kafka startTimeMs: 1719838954367   [org.apache.kafka.common.utils.AppInfoParser]
+2024-07-01 13:02:34,373 INFO   ||  [Worker clientId=connect-172.21.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-07-01 13:02:34,374 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Subscribed to topic(s): topic-kafka-redshift   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-07-01 13:02:34,375 INFO   ||  Starting JDBC Sink task   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-07-01 13:02:34,376 INFO   ||  JdbcSinkConfig values:
+	auto.create = true
+	auto.evolve = false
+	batch.size = 3000
+	connection.attempts = 3
+	connection.backoff.ms = 10000
+	connection.password = [hidden]
+	connection.url = jdbc:redshift://paw-redshift-rms4.chr56f2h3x9t.ap-southeast-1.redshift.amazonaws.com:5439/data_warehouse
+	connection.user = ibnu_muhammad
+	date.timezone = DB_TIMEZONE
+	db.timezone = UTC
+	delete.enabled = false
+	dialect.name =
+	fields.whitelist = []
+	insert.mode = insert
+	max.retries = 10
+	mssql.use.merge.holdlock = true
+	pk.fields = []
+	pk.mode = none
+	quote.sql.identifiers = ALWAYS
+	retry.backoff.ms = 3000
+	table.name.format = data_warehouse.development_ibnu_muhammad.testing_ibn_kubeflow1
+	table.types = [TABLE]
+	trim.sensitive.log = false
+   [io.confluent.connect.jdbc.sink.JdbcSinkConfig]
+2024-07-01 13:02:34,377 INFO   ||  Initializing JDBC writer   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-07-01 13:02:34,377 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-07-01 13:02:34,377 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-07-01 13:02:34,379 INFO   ||  Validating JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-07-01 13:02:34,379 INFO   ||  Validated JDBC URL.   [io.confluent.connect.jdbc.dialect.DatabaseDialects]
+2024-07-01 13:02:34,380 INFO   ||  Initializing writer using SQL dialect: RedshiftDatabaseDialect   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-07-01 13:02:34,381 INFO   ||  JDBC writer initialized   [io.confluent.connect.jdbc.sink.JdbcSinkTask]
+2024-07-01 13:02:34,381 INFO   ||  WorkerSinkTask{id=jdbc-sink-redshift-0} Sink task finished initialization and start   [org.apache.kafka.connect.runtime.WorkerSinkTask]
+2024-07-01 13:02:34,382 INFO   ||  WorkerSinkTask{id=jdbc-sink-redshift-0} Executing sink task   [org.apache.kafka.connect.runtime.WorkerSinkTask]
+2024-07-01 13:02:34,402 WARN   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Error while fetching metadata with correlation id 2 : {topic-kafka-redshift=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-07-01 13:02:34,402 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Cluster ID: iOcJywEjTfCtuA1cKAQ_5w   [org.apache.kafka.clients.Metadata]
+2024-07-01 13:02:34,403 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:34,403 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:34,411 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Request joining group due to: need to re-join with the given member-id: connector-consumer-jdbc-sink-redshift-0-ecc4e649-a3cb-4e24-8d77-3b5cc236bea5   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:34,411 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] (Re-)joining group   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,423 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Successfully joined group with generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-redshift-0-ecc4e649-a3cb-4e24-8d77-3b5cc236bea5', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,433 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Finished assignment for group at generation 1: {connector-consumer-jdbc-sink-redshift-0-ecc4e649-a3cb-4e24-8d77-3b5cc236bea5=Assignment(partitions=[topic-kafka-redshift-0])}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,438 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Successfully synced group in generation Generation{generationId=1, memberId='connector-consumer-jdbc-sink-redshift-0-ecc4e649-a3cb-4e24-8d77-3b5cc236bea5', protocol='range'}   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,438 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Notifying assignor about the new Assignment(partitions=[topic-kafka-redshift-0])   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,438 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Adding newly assigned partitions: topic-kafka-redshift-0   [org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker]
+2024-07-01 13:02:37,449 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Found no committed offset for partition topic-kafka-redshift-0   [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator]
+2024-07-01 13:02:37,451 INFO   ||  [Consumer clientId=connector-consumer-jdbc-sink-redshift-0, groupId=connect-jdbc-sink-redshift] Resetting offset for partition topic-kafka-redshift-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-07-01 13:02:49,782 INFO   ||  Maximum table name length for database is 127 bytes   [io.confluent.connect.jdbc.dialect.RedshiftDatabaseDialect]
+2024-07-01 13:02:49,782 INFO   ||  JdbcDbWriter Connected   [io.confluent.connect.jdbc.sink.JdbcDbWriter]
+...JDW | write | connection...
+com.amazon.redshift.jdbc.RedshiftConnectionImpl@53cbdf67
+...JDW | write | bufferByTable 1...
+{}
+...JDW | write | record...
+SinkRecord{kafkaOffset=0, timestampType=CreateTime, originalTopic=topic-kafka-redshift, originalKafkaPartition=0, originalKafkaOffset=0} ConnectRecord{topic='topic-kafka-redshift', kafkaPartition=0, key=null, keySchema=null, value=Struct{params={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},payload={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},etl_id=2022-10-10-11,etl_id_ts=Mon Oct 10 11:30:30 UTC 2022,etl_id_partition=1698224979,run_ts=Mon Oct 10 11:30:30 UTC 2022}, valueSchema=Schema{dbserver1.inventory.customers.Value:STRUCT}, timestamp=1719838967030, headers=ConnectHeaders(headers=)}
+...JDW | write | tableId 1...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 1...
+null
+...JDW | write | buffer 3...
+io.confluent.connect.jdbc.sink.BufferedRecords@49530193
+...JDW | write | bufferByTable 2...
+{"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"=io.confluent.connect.jdbc.sink.BufferedRecords@49530193}
+2024-07-01 13:02:49,990 INFO   ||  Checking Redshift dialect for existence of TABLE "data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
+2024-07-01 13:02:50,449 INFO   ||  Using Redshift dialect TABLE "data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1" present   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
+2024-07-01 13:02:51,934 INFO   ||  Checking Redshift dialect for type of TABLE "data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"   [io.confluent.connect.jdbc.dialect.GenericDatabaseDialect]
+2024-07-01 13:02:52,054 INFO   ||  Setting metadata for table "data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1" to Table{name='"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"', type=TABLE columns=[Column{'payload', isPrimaryKey=false, allowsNull=true, sqlType=super}, Column{'etl_id_partition', isPrimaryKey=false, allowsNull=true, sqlType=int8}, Column{'etl_id_ts', isPrimaryKey=false, allowsNull=true, sqlType=timestamp}, Column{'etl_id', isPrimaryKey=false, allowsNull=true, sqlType=varchar}, Column{'run_ts', isPrimaryKey=false, allowsNull=true, sqlType=timestamp}, Column{'params', isPrimaryKey=false, allowsNull=true, sqlType=super}]}   [io.confluent.connect.jdbc.util.TableDefinitions]
+...JDW | write | buffer 4...
+io.confluent.connect.jdbc.sink.BufferedRecords@49530193
+...JDW | write | tableId 2...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 2...
+io.confluent.connect.jdbc.sink.BufferedRecords@49530193
+...JDW | write | connection...
+com.amazon.redshift.jdbc.RedshiftConnectionImpl@53cbdf67
+...JDW | write | bufferByTable 1...
+{}
+...JDW | write | record...
+SinkRecord{kafkaOffset=1, timestampType=CreateTime, originalTopic=topic-kafka-redshift, originalKafkaPartition=0, originalKafkaOffset=1} ConnectRecord{topic='topic-kafka-redshift', kafkaPartition=0, key=null, keySchema=null, value=Struct{params={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},payload={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},etl_id=2022-10-10-11,etl_id_ts=Mon Oct 10 11:30:30 UTC 2022,etl_id_partition=1698224979,run_ts=Mon Oct 10 11:30:30 UTC 2022}, valueSchema=Schema{dbserver1.inventory.customers.Value:STRUCT}, timestamp=1719839007248, headers=ConnectHeaders(headers=)}
+...JDW | write | tableId 1...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 1...
+null
+...JDW | write | buffer 3...
+io.confluent.connect.jdbc.sink.BufferedRecords@70663d99
+...JDW | write | bufferByTable 2...
+{"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"=io.confluent.connect.jdbc.sink.BufferedRecords@70663d99}
+...JDW | write | buffer 4...
+io.confluent.connect.jdbc.sink.BufferedRecords@70663d99
+...JDW | write | tableId 2...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 2...
+io.confluent.connect.jdbc.sink.BufferedRecords@70663d99
+...JDW | write | connection...
+com.amazon.redshift.jdbc.RedshiftConnectionImpl@53cbdf67
+...JDW | write | bufferByTable 1...
+{}
+...JDW | write | record...
+SinkRecord{kafkaOffset=2, timestampType=CreateTime, originalTopic=topic-kafka-redshift, originalKafkaPartition=0, originalKafkaOffset=2} ConnectRecord{topic='topic-kafka-redshift', kafkaPartition=0, key=null, keySchema=null, value=Struct{params={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},payload={"id": 1008,"first_name": "bapercobaan","last_name": "bapertama","email": "batesting@email"},etl_id=2022-10-10-11,etl_id_ts=Mon Oct 10 11:30:30 UTC 2022,etl_id_partition=1698224979,run_ts=Mon Oct 10 11:30:30 UTC 2022}, valueSchema=Schema{dbserver1.inventory.customers.Value:STRUCT}, timestamp=1719839017939, headers=ConnectHeaders(headers=)}
+...JDW | write | tableId 1...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 1...
+null
+...JDW | write | buffer 3...
+io.confluent.connect.jdbc.sink.BufferedRecords@248d3c1e
+...JDW | write | bufferByTable 2...
+{"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"=io.confluent.connect.jdbc.sink.BufferedRecords@248d3c1e}
+...JDW | write | buffer 4...
+io.confluent.connect.jdbc.sink.BufferedRecords@248d3c1e
+...JDW | write | tableId 2...
+"data_warehouse"."development_ibnu_muhammad"."testing_ibn_kubeflow1"
+...JDW | write | buffer 2...
+io.confluent.connect.jdbc.sink.BufferedRecords@248d3c1e
+2024-07-01 13:07:20,815 INFO   ||  [AdminClient clientId=1-shared-admin] Node -1 disconnected.   [org.apache.kafka.clients.NetworkClient]

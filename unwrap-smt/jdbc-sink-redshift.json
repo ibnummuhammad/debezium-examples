@@ -10,7 +10,7 @@
     "insert.mode": "insert",
     "delete.enabled": "false",
 
-    "table.name.format": "data_warehouse.development_ibnu_muhammad.testing_ibn_kubeflow1",
+    "table.name.format": "data_warehouse.development_ibnu_muhammad.ml_ekyc_moderation_raw",
 
     "auto.create": "true",
 

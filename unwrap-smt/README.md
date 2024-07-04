@@ -139,13 +139,14 @@ curl --include -X POST -H 'Accept:application/json' -H 'Content-Type:application
 View list of kafka connect:
 
 ```shell
-curl --silent "http://localhost:8083/connectors?expand=info&expand=status" | jq '.'
+curl --silent 'http://localhost:8083/connectors?expand=info&expand=status' | jq '.'
+curl --silent 'http://localhost:8083/connector-plugins' | jq '.[].class'
 ```
 
 View list of kafka topics:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-topics.sh --list --bootstrap-server kafka:9092'
+docker exec --interactive --tty unwrap-smt-kafka-1 /bin/bash -c '/opt/bitnami/kafka/bin/kafka-topics.sh --bootstrap-server kafka:9092 --list'
 ```
 
 View message in kafka topic:

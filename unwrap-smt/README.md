@@ -108,10 +108,10 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 Insert data into inventory.customers:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "insert into customers values(default, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
 ```
 
 View data in table inventory.customers:
@@ -439,7 +439,7 @@ Insert a new record into MySQL:
 
 ```shell
 docker compose -f docker-compose-es.yaml exec mysql bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory'
-mysql> insert into customers values(default, 'John', 'Doe', 'john.doe@example.com');
+mysql> INSERT INTO customers VALUES(default, 'John', 'Doe', 'john.doe@example.com');
 Query OK, 1 row affected (0.02 sec)
 ```
 

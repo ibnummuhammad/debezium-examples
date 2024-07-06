@@ -1,0 +1,15 @@
+{
+  "name": "jdbc-source-postgres",
+  "config": {
+    "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+    "tasks.max": "1",
+    "mode": "bulk",
+
+    "connection.url": "jdbc:postgresql://postgres:5432/data_warehouse",
+    "connection.user": "postgresuser",
+    "connection.password": "postgrespw",
+
+    "table.whitelist": "development_ibnu_muhammad.ekyc_pipeline_rt",
+    "topic.prefix": "jdbc-source-postgres-"
+  }
+}

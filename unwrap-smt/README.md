@@ -96,7 +96,7 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 Create table customers:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "CREATE TABLE customers (id int NOT NULL AUTO_INCREMENT, first_name varchar(255) NOT NULL, last_name varchar(255) NOT NULL, email varchar(255) NOT NULL, PRIMARY KEY (id)) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER --password=$MYSQL_PASSWORD inventory --execute "CREATE TABLE customers (id int NOT NULL, first_name varchar(255) NOT NULL, last_name varchar(255) NOT NULL, email varchar(255) NOT NULL) ENGINE=InnoDB AUTO_INCREMENT=1001 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"'
 ```
 
 View list of tables in mysql:
@@ -108,10 +108,10 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 Insert data into inventory.customers:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
-docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(default, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(1001, '"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(1002, '"'"'George'"'"', '"'"'Bailey'"'"', '"'"'gbailey@foobar.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(1003, '"'"'Edward'"'"', '"'"'Walker'"'"', '"'"'ed@walker.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $MYSQL_USER  --password=$MYSQL_PASSWORD inventory --execute "INSERT INTO customers VALUES(1004, '"'"'Anne'"'"', '"'"'Kretchmar'"'"', '"'"'annek@noanswer.org'"'"')"'
 ```
 
 View data in table inventory.customers:

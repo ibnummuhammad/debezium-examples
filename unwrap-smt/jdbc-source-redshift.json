@@ -1,0 +1,16 @@
+{
+    "name": "jdbc-source-redshift",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "tasks.max": "1",
+      "mode": "bulk",
+  
+      "connection.url": "jdbc:redshift://:/",
+      "connection.user": "",
+      "connection.password": "",
+  
+      "table.whitelist": "testing_ibn_kubeflow4",
+      "topic.prefix": "jdbc-source-redshift-"
+    }
+  }
+  

@@ -1,0 +1,860 @@
+2024-08-03 08:07:13,389 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,390 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,390 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,390 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,390 INFO   ||  Started KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,390 INFO   ||  Finished reading offsets topic and starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
+2024-08-03 08:07:13,391 INFO   ||  Worker started   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:13,392 INFO   ||  Starting KafkaBasedLog with topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,440 INFO   ||  Created topic (name=my_source_connect_statuses, numPartitions=5, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-08-03 08:07:13,440 INFO   ||  ProducerConfig values:
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-statuses
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:13,440 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 08:07:13,442 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:13,442 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,442 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,442 INFO   ||  Kafka startTimeMs: 1722672433442   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,443 INFO   ||  ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-statuses
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 08:07:13,443 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 08:07:13,445 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 08:07:13,445 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,445 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,445 INFO   ||  Kafka startTimeMs: 1722672433445   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,446 INFO   ||  [Producer clientId=1-statuses] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:13,449 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Assigned to partition(s): my_source_connect_statuses-0, my_source_connect_statuses-4, my_source_connect_statuses-1, my_source_connect_statuses-2, my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,450 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,457 INFO   ||  Finished reading KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,457 INFO   ||  Started KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,461 INFO   ||  Starting KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-08-03 08:07:13,461 INFO   ||  Starting KafkaBasedLog with topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,482 INFO   ||  Created topic (name=my_connect_configs, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-08-03 08:07:13,482 INFO   ||  ProducerConfig values:
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-configs
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:13,483 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 08:07:13,485 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:13,485 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,485 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,485 INFO   ||  Kafka startTimeMs: 1722672433485   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,486 INFO   ||  ConsumerConfig values:
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [kafka:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = 1-configs
+	client.rack =
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = 1
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 08:07:13,486 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 08:07:13,488 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 08:07:13,488 INFO   ||  [Producer clientId=1-configs] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:13,488 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,488 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,488 INFO   ||  Kafka startTimeMs: 1722672433488   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:13,491 INFO   ||  [Consumer clientId=1-configs, groupId=1] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:13,492 INFO   ||  [Consumer clientId=1-configs, groupId=1] Assigned to partition(s): my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-08-03 08:07:13,492 INFO   ||  [Consumer clientId=1-configs, groupId=1] Seeking to earliest offset of partition my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,497 INFO   ||  [Consumer clientId=1-configs, groupId=1] Resetting offset for partition my_connect_configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 08:07:13,498 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,498 INFO   ||  Started KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 08:07:13,498 INFO   ||  Started KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-08-03 08:07:13,498 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Herder started   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:13,504 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:13,825 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:13,827 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:13,827 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:13,838 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:16,849 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=1, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:16,876 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=1, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:16,876 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', leaderUrl='http://172.18.0.6:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:16,876 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting connectors and tasks using config offset -1   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:16,876 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:16,913 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Session key updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,872 INFO   ||  Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker   [io.debezium.config.CommonConnectorConfig]
+2024-08-03 08:07:48,949 INFO   ||  Successfully tested connection for jdbc:postgresql://postgres:5432/postgres with user 'postgres'   [io.debezium.connector.postgresql.PostgresConnector]
+2024-08-03 08:07:48,953 INFO   ||  Connection gracefully closed   [io.debezium.jdbc.JdbcConnection]
+2024-08-03 08:07:48,954 INFO   ||  AbstractConfig values:
+   [org.apache.kafka.common.config.AbstractConfig]
+2024-08-03 08:07:48,961 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Connector inventory-connector config updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,961 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:48,961 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:48,963 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=2, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:48,968 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=2, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:48,968 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', leaderUrl='http://172.18.0.6:8083/', offset=2, connectorIds=[inventory-connector], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,968 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting connectors and tasks using config offset 2   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,969 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting connector inventory-connector   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,970 INFO   ||  Creating connector inventory-connector of type io.debezium.connector.postgresql.PostgresConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:48,970 INFO   ||  SourceConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SourceConnectorConfig]
+2024-08-03 08:07:48,971 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-08-03 08:07:48,973 INFO   ||  Instantiated connector inventory-connector with version 2.6.2.Final of type class io.debezium.connector.postgresql.PostgresConnector   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:48,974 INFO   ||  Finished creating connector inventory-connector   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:48,974 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:48,981 INFO   ||  SourceConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SourceConnectorConfig]
+2024-08-03 08:07:48,981 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-08-03 08:07:48,991 INFO   ||  192.168.65.1 - - [03/Aug/2024:08:07:48 +0000] "POST /connectors/ HTTP/1.1" 201 386 "-" "curl/8.6.0" 206   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 08:07:49,001 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Tasks [inventory-connector-0] configs updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:49,002 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:49,002 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:49,004 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=3, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:49,006 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=3, memberId='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 08:07:49,007 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.18.0.6:8083-4f2396ca-eccc-4fe2-be1f-0828ea7b3427', leaderUrl='http://172.18.0.6:8083/', offset=4, connectorIds=[inventory-connector], taskIds=[inventory-connector-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:49,007 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting connectors and tasks using config offset 4   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:49,008 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting task inventory-connector-0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:49,010 INFO   ||  Creating task inventory-connector-0   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,011 INFO   ||  ConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig]
+2024-08-03 08:07:49,011 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-08-03 08:07:49,013 INFO   ||  TaskConfig values:
+	task.class = class io.debezium.connector.postgresql.PostgresConnectorTask
+   [org.apache.kafka.connect.runtime.TaskConfig]
+2024-08-03 08:07:49,015 INFO   ||  Instantiated task inventory-connector-0 with version 2.6.2.Final of type io.debezium.connector.postgresql.PostgresConnectorTask   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,016 INFO   ||  JsonConverterConfig values:
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+   [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-08-03 08:07:49,016 INFO   ||  Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task inventory-connector-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,016 INFO   ||  JsonConverterConfig values:
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+   [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-08-03 08:07:49,016 INFO   ||  Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task inventory-connector-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,016 INFO   ||  Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task inventory-connector-0 using the worker config   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,018 INFO   ||  SourceConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.SourceConnectorConfig]
+2024-08-03 08:07:49,018 INFO   ||  EnrichedConnectorConfig values:
+	config.action.reload = restart
+	connector.class = io.debezium.connector.postgresql.PostgresConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = inventory-connector
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+   [org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig]
+2024-08-03 08:07:49,018 INFO   ||  Initializing: org.apache.kafka.connect.runtime.TransformationChain{}   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 08:07:49,018 INFO   ||  ProducerConfig values:
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [kafka:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-inventory-connector-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:49,019 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 08:07:49,021 INFO   ||  These configurations '[metrics.context.connect.kafka.cluster.id, metrics.context.connect.group.id]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 08:07:49,021 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:49,021 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:49,021 INFO   ||  Kafka startTimeMs: 1722672469021   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 08:07:49,026 INFO   ||  [Producer clientId=connector-producer-inventory-connector-0] Cluster ID: lSYvn9lsQ-u2jBsyJeEbPA   [org.apache.kafka.clients.Metadata]
+2024-08-03 08:07:49,029 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 08:07:49,030 INFO   ||  Starting PostgresConnectorTask with configuration:   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     connector.class = io.debezium.connector.postgresql.PostgresConnector   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     database.user = postgres   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     database.dbname = postgres   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     topic.prefix = dbserver1   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     task.class = io.debezium.connector.postgresql.PostgresConnectorTask   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     tasks.max = 1   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     database.hostname = postgres   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     database.password = ********   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     name = inventory-connector   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     schema.include.list = inventory   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||     database.port = 5432   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,030 INFO   ||  Loading the custom source info struct maker plugin: io.debezium.connector.postgresql.PostgresSourceInfoStructMaker   [io.debezium.config.CommonConnectorConfig]
+2024-08-03 08:07:49,031 INFO   ||  Loading the custom topic naming strategy plugin: io.debezium.schema.SchemaTopicNamingStrategy   [io.debezium.config.CommonConnectorConfig]
+2024-08-03 08:07:49,039 INFO   ||  Connection gracefully closed   [io.debezium.jdbc.JdbcConnection]
+2024-08-03 08:07:49,081 INFO   ||  No previous offsets found   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,100 INFO   ||  Connector started for the first time.   [io.debezium.connector.common.BaseSourceTask]
+2024-08-03 08:07:49,114 INFO   Postgres|dbserver1|postgres-connector-task  user 'postgres' connected to database 'postgres' on PostgreSQL 15.2 (Debian 15.2-1.pgdg110+1) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit with roles:
+	role 'pg_read_all_settings' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_database_owner' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_stat_scan_tables' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_checkpoint' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_write_all_data' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_monitor' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_server_files' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_execute_server_program' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_read_all_stats' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'pg_signal_backend' [superuser: false, replication: false, inherit: true, create role: false, create db: false, can log in: false]
+	role 'postgres' [superuser: true, replication: true, inherit: true, create role: true, create db: true, can log in: true]   [io.debezium.connector.postgresql.PostgresConnectorTask]
+2024-08-03 08:07:49,119 INFO   Postgres|dbserver1|postgres-connector-task  Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=null, catalogXmin=null]   [io.debezium.connector.postgresql.connection.PostgresConnection]
+2024-08-03 08:07:49,119 INFO   Postgres|dbserver1|postgres-connector-task  No previous offset found   [io.debezium.connector.postgresql.PostgresConnectorTask]
+2024-08-03 08:07:49,128 INFO   Postgres|dbserver1|postgres-connector-task  Creating replication slot with command CREATE_REPLICATION_SLOT "debezium"  LOGICAL decoderbufs   [io.debezium.connector.postgresql.connection.PostgresReplicationConnection]
+2024-08-03 08:07:49,140 INFO   Postgres|dbserver1|postgres-connector-task  Requested thread factory for connector PostgresConnector, id = dbserver1 named = SignalProcessor   [io.debezium.util.Threads]
+2024-08-03 08:07:49,146 INFO   Postgres|dbserver1|postgres-connector-task  Requested thread factory for connector PostgresConnector, id = dbserver1 named = change-event-source-coordinator   [io.debezium.util.Threads]
+2024-08-03 08:07:49,146 INFO   Postgres|dbserver1|postgres-connector-task  Requested thread factory for connector PostgresConnector, id = dbserver1 named = blocking-snapshot   [io.debezium.util.Threads]
+2024-08-03 08:07:49,151 INFO   Postgres|dbserver1|postgres-connector-task  Creating thread debezium-postgresconnector-dbserver1-change-event-source-coordinator   [io.debezium.util.Threads]
+2024-08-03 08:07:49,152 INFO   ||  WorkerSourceTask{id=inventory-connector-0} Source task finished initialization and start   [org.apache.kafka.connect.runtime.AbstractWorkerSourceTask]
+2024-08-03 08:07:49,154 INFO   Postgres|dbserver1|snapshot  Metrics registered   [io.debezium.pipeline.ChangeEventSourceCoordinator]
+2024-08-03 08:07:49,158 INFO   Postgres|dbserver1|snapshot  Context created   [io.debezium.pipeline.ChangeEventSourceCoordinator]
+2024-08-03 08:07:49,161 INFO   Postgres|dbserver1|snapshot  According to the connector configuration data will be snapshotted   [io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource]
+2024-08-03 08:07:49,162 INFO   Postgres|dbserver1|snapshot  Snapshot step 1 - Preparing   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,162 INFO   Postgres|dbserver1|snapshot  Setting isolation level   [io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource]
+2024-08-03 08:07:49,163 INFO   Postgres|dbserver1|snapshot  Opening transaction with statement SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+SET TRANSACTION SNAPSHOT '00000005-00000002-1';   [io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource]
+2024-08-03 08:07:49,188 INFO   Postgres|dbserver1|snapshot  Snapshot step 2 - Determining captured tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,190 INFO   Postgres|dbserver1|snapshot  Adding table inventory.geom to the list of capture schema tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,190 INFO   Postgres|dbserver1|snapshot  Adding table inventory.products_on_hand to the list of capture schema tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,190 INFO   Postgres|dbserver1|snapshot  Adding table inventory.customers to the list of capture schema tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,190 INFO   Postgres|dbserver1|snapshot  Adding table inventory.orders to the list of capture schema tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,190 INFO   Postgres|dbserver1|snapshot  Adding table inventory.products to the list of capture schema tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,191 INFO   Postgres|dbserver1|snapshot  Created connection pool with 1 threads   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,191 INFO   Postgres|dbserver1|snapshot  Snapshot step 3 - Locking captured tables [inventory.customers, inventory.geom, inventory.orders, inventory.products, inventory.products_on_hand]   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,195 INFO   Postgres|dbserver1|snapshot  Snapshot step 4 - Determining snapshot offset   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,195 INFO   Postgres|dbserver1|snapshot  Creating initial offset context   [io.debezium.connector.postgresql.PostgresOffsetContext]
+2024-08-03 08:07:49,196 INFO   Postgres|dbserver1|snapshot  Read xlogStart at 'LSN{0/207E9C0}' from transaction '763'   [io.debezium.connector.postgresql.PostgresOffsetContext]
+2024-08-03 08:07:49,199 INFO   Postgres|dbserver1|snapshot  Read xlogStart at 'LSN{0/207E9C0}' from transaction '763'   [io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource]
+2024-08-03 08:07:49,200 INFO   Postgres|dbserver1|snapshot  Snapshot step 5 - Reading structure of captured tables   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,200 INFO   Postgres|dbserver1|snapshot  Reading structure of schema 'inventory' of catalog 'postgres'   [io.debezium.connector.postgresql.PostgresSnapshotChangeEventSource]
+2024-08-03 08:07:49,223 INFO   Postgres|dbserver1|snapshot  Snapshot step 6 - Persisting schema history   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,223 INFO   Postgres|dbserver1|snapshot  Snapshot step 7 - Snapshotting data   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,223 INFO   Postgres|dbserver1|snapshot  Creating snapshot worker pool with 1 worker thread(s)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,226 INFO   Postgres|dbserver1|snapshot  For table 'inventory.customers' using select statement: 'SELECT "id", "first_name", "last_name", "email" FROM "inventory"."customers"'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,226 INFO   Postgres|dbserver1|snapshot  For table 'inventory.geom' using select statement: 'SELECT "id", "g", "h" FROM "inventory"."geom"'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,227 INFO   Postgres|dbserver1|snapshot  For table 'inventory.orders' using select statement: 'SELECT "id", "order_date", "purchaser", "quantity", "product_id" FROM "inventory"."orders"'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,227 INFO   Postgres|dbserver1|snapshot  For table 'inventory.products' using select statement: 'SELECT "id", "name", "description", "weight" FROM "inventory"."products"'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,227 INFO   Postgres|dbserver1|snapshot  For table 'inventory.products_on_hand' using select statement: 'SELECT "product_id", "quantity" FROM "inventory"."products_on_hand"'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,228 INFO   Postgres|dbserver1|snapshot  Exporting data from table 'inventory.customers' (1 of 5 tables)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,236 INFO   Postgres|dbserver1|snapshot  	 Finished exporting 4 records for table 'inventory.customers' (1 of 5 tables); total duration '00:00:00.008'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,237 INFO   Postgres|dbserver1|snapshot  Exporting data from table 'inventory.geom' (2 of 5 tables)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,245 INFO   Postgres|dbserver1|snapshot  	 Finished exporting 3 records for table 'inventory.geom' (2 of 5 tables); total duration '00:00:00.008'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,245 INFO   Postgres|dbserver1|snapshot  Exporting data from table 'inventory.orders' (3 of 5 tables)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,249 INFO   Postgres|dbserver1|snapshot  	 Finished exporting 4 records for table 'inventory.orders' (3 of 5 tables); total duration '00:00:00.004'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,249 INFO   Postgres|dbserver1|snapshot  Exporting data from table 'inventory.products' (4 of 5 tables)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,252 INFO   Postgres|dbserver1|snapshot  	 Finished exporting 9 records for table 'inventory.products' (4 of 5 tables); total duration '00:00:00.003'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,252 INFO   Postgres|dbserver1|snapshot  Exporting data from table 'inventory.products_on_hand' (5 of 5 tables)   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,255 INFO   Postgres|dbserver1|snapshot  	 Finished exporting 9 records for table 'inventory.products_on_hand' (5 of 5 tables); total duration '00:00:00.003'   [io.debezium.relational.RelationalSnapshotChangeEventSource]
+2024-08-03 08:07:49,256 INFO   Postgres|dbserver1|snapshot  Snapshot - Final stage   [io.debezium.pipeline.source.AbstractSnapshotChangeEventSource]
+2024-08-03 08:07:49,256 INFO   Postgres|dbserver1|snapshot  Snapshot completed   [io.debezium.pipeline.source.AbstractSnapshotChangeEventSource]
+2024-08-03 08:07:49,266 INFO   Postgres|dbserver1|snapshot  Snapshot ended with SnapshotResult [status=COMPLETED, offset=PostgresOffsetContext [sourceInfoSchema=Schema{io.debezium.connector.postgresql.Source:STRUCT}, sourceInfo=source_info[server='dbserver1'db='postgres', lsn=LSN{0/207E9C0}, txId=763, timestamp=2024-08-03T08:07:49.165014Z, snapshot=FALSE, schema=inventory, table=products_on_hand], lastSnapshotRecord=true, lastCompletelyProcessedLsn=null, lastCommitLsn=null, streamingStoppingLsn=null, transactionContext=TransactionContext [currentTransactionId=null, perTableEventCount={}, totalEventCount=0], incrementalSnapshotContext=IncrementalSnapshotContext [windowOpened=false, chunkEndPosition=null, dataCollectionsToSnapshot=[], lastEventKeySent=null, maximumKey=null]]]   [io.debezium.pipeline.ChangeEventSourceCoordinator]
+2024-08-03 08:07:49,268 INFO   Postgres|dbserver1|streaming  Connected metrics set to 'true'   [io.debezium.pipeline.ChangeEventSourceCoordinator]
+2024-08-03 08:07:49,281 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.geom' is 'DEFAULT'; UPDATE and DELETE events will contain previous values only for PK columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,281 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.products_on_hand' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,282 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.customers' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,282 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.orders' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,283 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.products' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,288 INFO   Postgres|dbserver1|streaming  SignalProcessor started. Scheduling it every 5000ms   [io.debezium.pipeline.signal.SignalProcessor]
+2024-08-03 08:07:49,288 INFO   Postgres|dbserver1|streaming  Creating thread debezium-postgresconnector-dbserver1-SignalProcessor   [io.debezium.util.Threads]
+2024-08-03 08:07:49,288 INFO   Postgres|dbserver1|streaming  Starting streaming   [io.debezium.pipeline.ChangeEventSourceCoordinator]
+2024-08-03 08:07:49,288 INFO   Postgres|dbserver1|streaming  Retrieved latest position from stored offset 'LSN{0/207E9C0}'   [io.debezium.connector.postgresql.PostgresStreamingChangeEventSource]
+2024-08-03 08:07:49,289 INFO   Postgres|dbserver1|streaming  Looking for WAL restart position for last commit LSN 'null' and last change LSN 'LSN{0/207E9C0}'   [io.debezium.connector.postgresql.connection.WalPositionLocator]
+2024-08-03 08:07:49,296 INFO   Postgres|dbserver1|streaming  Obtained valid replication slot ReplicationSlot [active=false, latestFlushedLsn=LSN{0/207E9C0}, catalogXmin=763]   [io.debezium.connector.postgresql.connection.PostgresConnection]
+2024-08-03 08:07:49,297 INFO   Postgres|dbserver1|streaming  Connection gracefully closed   [io.debezium.jdbc.JdbcConnection]
+2024-08-03 08:07:49,313 INFO   Postgres|dbserver1|streaming  Requested thread factory for connector PostgresConnector, id = dbserver1 named = keep-alive   [io.debezium.util.Threads]
+2024-08-03 08:07:49,313 INFO   Postgres|dbserver1|streaming  Creating thread debezium-postgresconnector-dbserver1-keep-alive   [io.debezium.util.Threads]
+2024-08-03 08:07:49,324 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.geom' is 'DEFAULT'; UPDATE and DELETE events will contain previous values only for PK columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,325 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.products_on_hand' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,325 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.customers' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,325 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.orders' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,325 INFO   Postgres|dbserver1|streaming  REPLICA IDENTITY for 'inventory.products' is 'FULL'; UPDATE AND DELETE events will contain the previous values of all the columns   [io.debezium.connector.postgresql.PostgresSchema]
+2024-08-03 08:07:49,327 INFO   Postgres|dbserver1|streaming  Processing messages   [io.debezium.connector.postgresql.PostgresStreamingChangeEventSource]
+2024-08-03 08:07:49,669 WARN   ||  [Producer clientId=connector-producer-inventory-connector-0] Error while fetching metadata with correlation id 4 : {dbserver1.inventory.customers=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-08-03 08:07:49,806 WARN   ||  [Producer clientId=connector-producer-inventory-connector-0] Error while fetching metadata with correlation id 7 : {dbserver1.inventory.geom=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-08-03 08:07:49,939 WARN   ||  [Producer clientId=connector-producer-inventory-connector-0] Error while fetching metadata with correlation id 11 : {dbserver1.inventory.orders=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-08-03 08:07:50,065 WARN   ||  [Producer clientId=connector-producer-inventory-connector-0] Error while fetching metadata with correlation id 15 : {dbserver1.inventory.products=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]
+2024-08-03 08:07:50,204 WARN   ||  [Producer clientId=connector-producer-inventory-connector-0] Error while fetching metadata with correlation id 20 : {dbserver1.inventory.products_on_hand=LEADER_NOT_AVAILABLE}   [org.apache.kafka.clients.NetworkClient]

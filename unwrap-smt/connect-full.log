@@ -1,0 +1,1303 @@
+2024-08-03 20:48:13 Using BOOTSTRAP_SERVERS=kafka:9092
+2024-08-03 20:48:13 Plugins are loaded from /kafka/connect
+2024-08-03 20:48:13 Using the following environment variables:
+2024-08-03 20:48:13       GROUP_ID=1
+2024-08-03 20:48:13       CONFIG_STORAGE_TOPIC=my_connect_configs
+2024-08-03 20:48:13       OFFSET_STORAGE_TOPIC=my_connect_offsets
+2024-08-03 20:48:13       STATUS_STORAGE_TOPIC=my_source_connect_statuses
+2024-08-03 20:48:13       BOOTSTRAP_SERVERS=kafka:9092
+2024-08-03 20:48:13       REST_HOST_NAME=172.18.0.6
+2024-08-03 20:48:13       REST_PORT=8083
+2024-08-03 20:48:13       ADVERTISED_HOST_NAME=172.18.0.6
+2024-08-03 20:48:13       ADVERTISED_PORT=8083
+2024-08-03 20:48:13       KEY_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:13       VALUE_CONVERTER=org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:13       OFFSET_FLUSH_INTERVAL_MS=60000
+2024-08-03 20:48:13       OFFSET_FLUSH_TIMEOUT_MS=5000
+2024-08-03 20:48:13       SHUTDOWN_TIMEOUT=10000
+2024-08-03 20:48:13 --- Setting property from CONNECT_REST_ADVERTISED_PORT: rest.advertised.port=8083
+2024-08-03 20:48:13 --- Setting property from CONNECT_OFFSET_STORAGE_TOPIC: offset.storage.topic=my_connect_offsets
+2024-08-03 20:48:14 --- Setting property from CONNECT_KEY_CONVERTER: key.converter=org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:14 --- Setting property from CONNECT_CONFIG_STORAGE_TOPIC: config.storage.topic=my_connect_configs
+2024-08-03 20:48:14 --- Setting property from CONNECT_GROUP_ID: group.id=1
+2024-08-03 20:48:14 --- Setting property from CONNECT_REST_ADVERTISED_HOST_NAME: rest.advertised.host.name=172.18.0.6
+2024-08-03 20:48:14 --- Setting property from CONNECT_REST_HOST_NAME: rest.host.name=172.18.0.6
+2024-08-03 20:48:14 --- Setting property from CONNECT_VALUE_CONVERTER: value.converter=org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:14 --- Setting property from CONNECT_REST_PORT: rest.port=8083
+2024-08-03 20:48:14 --- Setting property from CONNECT_STATUS_STORAGE_TOPIC: status.storage.topic=my_source_connect_statuses
+2024-08-03 20:48:14 --- Setting property from CONNECT_OFFSET_FLUSH_TIMEOUT_MS: offset.flush.timeout.ms=5000
+2024-08-03 20:48:13 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:13 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 egrep: warning: egrep is obsolescent; using grep -E
+2024-08-03 20:48:14 --- Setting property from CONNECT_PLUGIN_PATH: plugin.path=/kafka/connect
+2024-08-03 20:48:14 --- Setting property from CONNECT_OFFSET_FLUSH_INTERVAL_MS: offset.flush.interval.ms=60000
+2024-08-03 20:48:14 --- Setting property from CONNECT_BOOTSTRAP_SERVERS: bootstrap.servers=kafka:9092
+2024-08-03 20:48:14 --- Setting property from CONNECT_TASK_SHUTDOWN_GRACEFUL_TIMEOUT_MS: task.shutdown.graceful.timeout.ms=10000
+2024-08-03 20:48:14 2024-08-03 13:48:14,726 INFO   ||  Kafka Connect worker initializing ...   [org.apache.kafka.connect.cli.AbstractConnectCli]
+2024-08-03 20:48:14 2024-08-03 13:48:14,728 INFO   ||  WorkerInfo values: 
+2024-08-03 20:48:14 jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/kafka/logs, -Dlog4j.configuration=file:/kafka/config/log4j.properties
+2024-08-03 20:48:14 jvm.spec = Red Hat, Inc., OpenJDK 64-Bit Server VM, 11.0.23, 11.0.23+9
+2024-08-03 20:48:14 jvm.classpath = /kafka/libs/activation-1.1.1.jar:/kafka/libs/aopalliance-repackaged-2.6.1.jar:/kafka/libs/argparse4j-0.7.0.jar:/kafka/libs/audience-annotations-0.12.0.jar:/kafka/libs/caffeine-2.9.3.jar:/kafka/libs/checker-qual-3.19.0.jar:/kafka/libs/commons-beanutils-1.9.4.jar:/kafka/libs/commons-cli-1.4.jar:/kafka/libs/commons-collections-3.2.2.jar:/kafka/libs/commons-digester-2.1.jar:/kafka/libs/commons-io-2.11.0.jar:/kafka/libs/commons-lang3-3.8.1.jar:/kafka/libs/commons-logging-1.2.jar:/kafka/libs/commons-validator-1.7.jar:/kafka/libs/connect-api-3.7.0.jar:/kafka/libs/connect-basic-auth-extension-3.7.0.jar:/kafka/libs/connect-json-3.7.0.jar:/kafka/libs/connect-mirror-3.7.0.jar:/kafka/libs/connect-mirror-client-3.7.0.jar:/kafka/libs/connect-runtime-3.7.0.jar:/kafka/libs/connect-transforms-3.7.0.jar:/kafka/libs/error_prone_annotations-2.10.0.jar:/kafka/libs/hk2-api-2.6.1.jar:/kafka/libs/hk2-locator-2.6.1.jar:/kafka/libs/hk2-utils-2.6.1.jar:/kafka/libs/jackson-annotations-2.16.0.jar:/kafka/libs/jackson-core-2.16.0.jar:/kafka/libs/jackson-databind-2.16.0.jar:/kafka/libs/jackson-dataformat-csv-2.16.0.jar:/kafka/libs/jackson-datatype-jdk8-2.16.0.jar:/kafka/libs/jackson-jaxrs-base-2.16.0.jar:/kafka/libs/jackson-jaxrs-json-provider-2.16.0.jar:/kafka/libs/jackson-module-jaxb-annotations-2.16.0.jar:/kafka/libs/jackson-module-scala_2.13-2.16.0.jar:/kafka/libs/jakarta.activation-api-1.2.2.jar:/kafka/libs/jakarta.annotation-api-1.3.5.jar:/kafka/libs/jakarta.inject-2.6.1.jar:/kafka/libs/jakarta.validation-api-2.0.2.jar:/kafka/libs/jakarta.ws.rs-api-2.1.6.jar:/kafka/libs/jakarta.xml.bind-api-2.3.3.jar:/kafka/libs/javassist-3.29.2-GA.jar:/kafka/libs/javax.activation-api-1.2.0.jar:/kafka/libs/javax.annotation-api-1.3.2.jar:/kafka/libs/javax.servlet-api-3.1.0.jar:/kafka/libs/javax.ws.rs-api-2.1.1.jar:/kafka/libs/jaxb-api-2.3.1.jar:/kafka/libs/jersey-client-2.39.1.jar:/kafka/libs/jersey-common-2.39.1.jar:/kafka/libs/jersey-container-servlet-2.39.1.jar:/kafka/libs/jersey-container-servlet-core-2.39.1.jar:/kafka/libs/jersey-hk2-2.39.1.jar:/kafka/libs/jersey-server-2.39.1.jar:/kafka/libs/jetty-client-9.4.53.v20231009.jar:/kafka/libs/jetty-continuation-9.4.53.v20231009.jar:/kafka/libs/jetty-http-9.4.53.v20231009.jar:/kafka/libs/jetty-io-9.4.53.v20231009.jar:/kafka/libs/jetty-security-9.4.53.v20231009.jar:/kafka/libs/jetty-server-9.4.53.v20231009.jar:/kafka/libs/jetty-servlet-9.4.53.v20231009.jar:/kafka/libs/jetty-servlets-9.4.53.v20231009.jar:/kafka/libs/jetty-util-9.4.53.v20231009.jar:/kafka/libs/jetty-util-ajax-9.4.53.v20231009.jar:/kafka/libs/jline-3.22.0.jar:/kafka/libs/jolokia-jvm-1.7.2.jar:/kafka/libs/jopt-simple-5.0.4.jar:/kafka/libs/jose4j-0.9.4.jar:/kafka/libs/jsr305-3.0.2.jar:/kafka/libs/kafka-clients-3.7.0.jar:/kafka/libs/kafka-group-coordinator-3.7.0.jar:/kafka/libs/kafka-log4j-appender-3.7.0.jar:/kafka/libs/kafka-metadata-3.7.0.jar:/kafka/libs/kafka-raft-3.7.0.jar:/kafka/libs/kafka-server-3.7.0.jar:/kafka/libs/kafka-server-common-3.7.0.jar:/kafka/libs/kafka-shell-3.7.0.jar:/kafka/libs/kafka-storage-3.7.0.jar:/kafka/libs/kafka-storage-api-3.7.0.jar:/kafka/libs/kafka-streams-3.7.0.jar:/kafka/libs/kafka-streams-examples-3.7.0.jar:/kafka/libs/kafka-streams-scala_2.13-3.7.0.jar:/kafka/libs/kafka-streams-test-utils-3.7.0.jar:/kafka/libs/kafka-tools-3.7.0.jar:/kafka/libs/kafka-tools-api-3.7.0.jar:/kafka/libs/kafka_2.13-3.7.0.jar:/kafka/libs/lz4-java-1.8.0.jar:/kafka/libs/maven-artifact-3.8.8.jar:/kafka/libs/metrics-core-2.2.0.jar:/kafka/libs/metrics-core-4.1.12.1.jar:/kafka/libs/netty-buffer-4.1.100.Final.jar:/kafka/libs/netty-codec-4.1.100.Final.jar:/kafka/libs/netty-common-4.1.100.Final.jar:/kafka/libs/netty-handler-4.1.100.Final.jar:/kafka/libs/netty-resolver-4.1.100.Final.jar:/kafka/libs/netty-transport-4.1.100.Final.jar:/kafka/libs/netty-transport-classes-epoll-4.1.100.Final.jar:/kafka/libs/netty-transport-native-epoll-4.1.100.Final.jar:/kafka/libs/netty-transport-native-unix-common-4.1.100.Final.jar:/kafka/libs/opentelemetry-proto-1.0.0-alpha.jar:/kafka/libs/osgi-resource-locator-1.0.3.jar:/kafka/libs/paranamer-2.8.jar:/kafka/libs/pcollections-4.0.1.jar:/kafka/libs/plexus-utils-3.3.1.jar:/kafka/libs/postgresql-42.7.3.jar:/kafka/libs/protobuf-java-3.23.4.jar:/kafka/libs/redshift-jdbc42-2.1.0.28.jar:/kafka/libs/reflections-0.10.2.jar:/kafka/libs/reload4j-1.2.25.jar:/kafka/libs/rocksdbjni-7.9.2.jar:/kafka/libs/scala-collection-compat_2.13-2.10.0.jar:/kafka/libs/scala-java8-compat_2.13-1.0.2.jar:/kafka/libs/scala-library-2.13.12.jar:/kafka/libs/scala-logging_2.13-3.9.4.jar:/kafka/libs/scala-reflect-2.13.12.jar:/kafka/libs/slf4j-api-1.7.36.jar:/kafka/libs/slf4j-reload4j-1.7.36.jar:/kafka/libs/snappy-java-1.1.10.5.jar:/kafka/libs/swagger-annotations-2.2.8.jar:/kafka/libs/trogdor-3.7.0.jar:/kafka/libs/zookeeper-3.8.3.jar:/kafka/libs/zookeeper-jute-3.8.3.jar:/kafka/libs/zstd-jni-1.5.5-6.jar
+2024-08-03 20:48:14 os.spec = Linux, aarch64, 6.10.0-linuxkit
+2024-08-03 20:48:14 os.vcpus = 8
+2024-08-03 20:48:14    [org.apache.kafka.connect.runtime.WorkerInfo]
+2024-08-03 20:48:14 2024-08-03 13:48:14,728 INFO   ||  Scanning for plugin classes. This might take a moment ...   [org.apache.kafka.connect.cli.AbstractConnectCli]
+2024-08-03 20:48:14 2024-08-03 13:48:14,742 INFO   ||  Loading plugin from: /kafka/connect/kafka-connect-jdbc   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,881 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/kafka-connect-jdbc/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,888 INFO   ||  Loading plugin from: /kafka/connect/debezium-connector-postgres   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,901 INFO   ||  Using up-to-date JsonConverter implementation   [io.debezium.converters.CloudEventsConverter]
+2024-08-03 20:48:14 2024-08-03 13:48:14,935 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/debezium-connector-postgres/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,938 INFO   ||  Loading plugin from: /kafka/connect/debezium-connector-mysql   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,954 INFO   ||  Using up-to-date JsonConverter implementation   [io.debezium.converters.CloudEventsConverter]
+2024-08-03 20:48:14 2024-08-03 13:48:14,977 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/debezium-connector-mysql/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,981 INFO   ||  Loading plugin from: classpath   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,986 INFO   ||  Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,986 INFO   ||  Scanning plugins with ServiceLoaderScanner took 245 ms   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:14 2024-08-03 13:48:14,987 INFO   ||  Loading plugin from: /kafka/connect/kafka-connect-jdbc   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,048 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/kafka-connect-jdbc/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,049 INFO   ||  Loading plugin from: /kafka/connect/debezium-connector-postgres   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,248 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/debezium-connector-postgres/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,249 INFO   ||  Loading plugin from: /kafka/connect/debezium-connector-mysql   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,498 INFO   ||  Registered loader: PluginClassLoader{pluginLocation=file:/kafka/connect/debezium-connector-mysql/}   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:15 2024-08-03 13:48:15,499 INFO   ||  Loading plugin from: classpath   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:16 2024-08-03 13:48:16,224 INFO   ||  Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:16 2024-08-03 13:48:16,224 INFO   ||  Scanning plugins with ReflectionScanner took 1237 ms   [org.apache.kafka.connect.runtime.isolation.PluginScanner]
+2024-08-03 20:48:16 2024-08-03 13:48:16,227 WARN   ||  One or more plugins are missing ServiceLoader manifests may not be usable with plugin.discovery=service_load: [
+2024-08-03 20:48:16 file:/kafka/connect/kafka-connect-jdbc/io.confluent.connect.jdbc.JdbcSinkConnectorsink10.7.6
+2024-08-03 20:48:16 file:/kafka/connect/kafka-connect-jdbc/io.confluent.connect.jdbc.JdbcSourceConnectorsource10.7.6
+2024-08-03 20:48:16 ]
+2024-08-03 20:48:16 Read the documentation at https://kafka.apache.org/documentation.html#connect_plugindiscovery for instructions on migrating your plugins to take advantage of the performance improvements of service_load mode. To silence this warning, set plugin.discovery=only_scan in the worker config.   [org.apache.kafka.connect.runtime.isolation.Plugins]
+2024-08-03 20:48:16 2024-08-03 13:48:16,227 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,227 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.Filter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.DoubleConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.DropHeaders'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.Cast$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.InsertHeader'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.converters.BinaryDataConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.confluent.connect.jdbc.JdbcSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.ExtractNewRecordState'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.converters.ByteArrayConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.partitions.PartitionRouting'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.outbox.EventRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.IntegerConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.connector.mysql.MySqlConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.Cast$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.confluent.connect.jdbc.JdbcSinkConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.FloatConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.HeaderToValue'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.SchemaChangeEventFilter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.ExtractSchemaToNewRecord'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.ByLogicalTableRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.RegexRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.ValueToKey'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.LongConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.json.JsonConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'io.debezium.transforms.TimezoneConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,228 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.transforms.ExtractChangedRecordState'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.storage.StringConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.transforms.tracing.ActivateTracingSpan'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.BooleanConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.connector.postgresql.PostgresConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'io.debezium.converters.CloudEventsConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,229 INFO   ||  Added plugin 'org.apache.kafka.connect.converters.ShortConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,230 INFO   ||  Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'CloudEventsConverter' to plugin 'io.debezium.converters.CloudEventsConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'MySql' to plugin 'io.debezium.connector.mysql.MySqlConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'MySqlConnector' to plugin 'io.debezium.connector.mysql.MySqlConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'HeaderToValue' to plugin 'io.debezium.transforms.HeaderToValue'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'PartitionRouting' to plugin 'io.debezium.transforms.partitions.PartitionRouting'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'JdbcSource' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'ExtractSchemaToNewRecord' to plugin 'io.debezium.transforms.ExtractSchemaToNewRecord'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'BinaryData' to plugin 'io.debezium.converters.BinaryDataConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'ReadToInsertEvent' to plugin 'io.debezium.connector.mysql.transforms.ReadToInsertEvent'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'CloudEvents' to plugin 'io.debezium.converters.CloudEventsConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'TimezoneConverter' to plugin 'io.debezium.transforms.TimezoneConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'DebeziumPostgres' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'ExtractNewRecordState' to plugin 'io.debezium.transforms.ExtractNewRecordState'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,231 INFO   ||  Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'ExtractChangedRecordState' to plugin 'io.debezium.transforms.ExtractChangedRecordState'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'DebeziumMySql' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'JdbcSinkConnector' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'DebeziumPostgresConnectRestExtension' to plugin 'io.debezium.connector.postgresql.rest.DebeziumPostgresConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'DebeziumMySqlConnectRestExtension' to plugin 'io.debezium.connector.mysql.rest.DebeziumMySqlConnectRestExtension'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'JdbcSink' to plugin 'io.confluent.connect.jdbc.JdbcSinkConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'JdbcSourceConnector' to plugin 'io.confluent.connect.jdbc.JdbcSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Postgres' to plugin 'io.debezium.connector.postgresql.PostgresConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'ByLogicalTableRouter' to plugin 'io.debezium.transforms.ByLogicalTableRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'EventRouter' to plugin 'io.debezium.transforms.outbox.EventRouter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'SchemaChangeEventFilter' to plugin 'io.debezium.transforms.SchemaChangeEventFilter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'ActivateTracingSpan' to plugin 'io.debezium.transforms.tracing.ActivateTracingSpan'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'BinaryDataConverter' to plugin 'io.debezium.converters.BinaryDataConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'TimescaleDb' to plugin 'io.debezium.connector.postgresql.transforms.timescaledb.TimescaleDb'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'PostgresConnector' to plugin 'io.debezium.connector.postgresql.PostgresConnector'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,232 INFO   ||  Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter'   [org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader]
+2024-08-03 20:48:16 2024-08-03 13:48:16,255 INFO   ||  DistributedConfig values: 
+2024-08-03 20:48:16 access.control.allow.methods = 
+2024-08-03 20:48:16 access.control.allow.origin = 
+2024-08-03 20:48:16 admin.listeners = null
+2024-08-03 20:48:16 auto.include.jmx.reporter = true
+2024-08-03 20:48:16 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:16 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:16 client.id = 
+2024-08-03 20:48:16 config.providers = []
+2024-08-03 20:48:16 config.storage.replication.factor = 1
+2024-08-03 20:48:16 config.storage.topic = my_connect_configs
+2024-08-03 20:48:16 connect.protocol = sessioned
+2024-08-03 20:48:16 connections.max.idle.ms = 540000
+2024-08-03 20:48:16 connector.client.config.override.policy = All
+2024-08-03 20:48:16 exactly.once.source.support = disabled
+2024-08-03 20:48:16 group.id = 1
+2024-08-03 20:48:16 header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+2024-08-03 20:48:16 heartbeat.interval.ms = 3000
+2024-08-03 20:48:16 inter.worker.key.generation.algorithm = HmacSHA256
+2024-08-03 20:48:16 inter.worker.key.size = null
+2024-08-03 20:48:16 inter.worker.key.ttl.ms = 3600000
+2024-08-03 20:48:16 inter.worker.signature.algorithm = HmacSHA256
+2024-08-03 20:48:16 inter.worker.verification.algorithms = [HmacSHA256]
+2024-08-03 20:48:16 key.converter = class org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:16 listeners = [http://:8083]
+2024-08-03 20:48:16 metadata.max.age.ms = 300000
+2024-08-03 20:48:16 metric.reporters = []
+2024-08-03 20:48:16 metrics.num.samples = 2
+2024-08-03 20:48:16 metrics.recording.level = INFO
+2024-08-03 20:48:16 metrics.sample.window.ms = 30000
+2024-08-03 20:48:16 offset.flush.interval.ms = 60000
+2024-08-03 20:48:16 offset.flush.timeout.ms = 5000
+2024-08-03 20:48:16 offset.storage.partitions = 25
+2024-08-03 20:48:16 offset.storage.replication.factor = 1
+2024-08-03 20:48:16 offset.storage.topic = my_connect_offsets
+2024-08-03 20:48:16 plugin.discovery = hybrid_warn
+2024-08-03 20:48:16 plugin.path = [/kafka/connect]
+2024-08-03 20:48:16 rebalance.timeout.ms = 60000
+2024-08-03 20:48:16 receive.buffer.bytes = 32768
+2024-08-03 20:48:16 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:16 reconnect.backoff.ms = 50
+2024-08-03 20:48:16 request.timeout.ms = 40000
+2024-08-03 20:48:16 response.http.headers.config = 
+2024-08-03 20:48:16 rest.advertised.host.name = 172.18.0.6
+2024-08-03 20:48:16 rest.advertised.listener = null
+2024-08-03 20:48:16 rest.advertised.port = 8083
+2024-08-03 20:48:16 rest.extension.classes = []
+2024-08-03 20:48:16 retry.backoff.max.ms = 1000
+2024-08-03 20:48:16 retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.client.callback.handler.class = null
+2024-08-03 20:48:16 sasl.jaas.config = null
+2024-08-03 20:48:16 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:16 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:16 sasl.kerberos.service.name = null
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.callback.handler.class = null
+2024-08-03 20:48:16 sasl.login.class = null
+2024-08-03 20:48:16 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:16 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:16 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:16 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.mechanism = GSSAPI
+2024-08-03 20:48:16 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:16 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:16 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:16 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:16 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:16 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:16 scheduled.rebalance.max.delay.ms = 300000
+2024-08-03 20:48:16 security.protocol = PLAINTEXT
+2024-08-03 20:48:16 send.buffer.bytes = 131072
+2024-08-03 20:48:16 session.timeout.ms = 10000
+2024-08-03 20:48:16 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:16 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.client.auth = none
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16 status.storage.partitions = 5
+2024-08-03 20:48:16 status.storage.replication.factor = 1
+2024-08-03 20:48:16 status.storage.topic = my_source_connect_statuses
+2024-08-03 20:48:16 task.shutdown.graceful.timeout.ms = 10000
+2024-08-03 20:48:16 topic.creation.enable = true
+2024-08-03 20:48:16 topic.tracking.allow.reset = true
+2024-08-03 20:48:16 topic.tracking.enable = true
+2024-08-03 20:48:16 value.converter = class org.apache.kafka.connect.json.JsonConverter
+2024-08-03 20:48:16 worker.sync.timeout.ms = 3000
+2024-08-03 20:48:16 worker.unsync.backoff.ms = 300000
+2024-08-03 20:48:16    [org.apache.kafka.connect.runtime.distributed.DistributedConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,256 INFO   ||  Creating Kafka admin client   [org.apache.kafka.connect.runtime.WorkerConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,257 INFO   ||  AdminClientConfig values: 
+2024-08-03 20:48:16 auto.include.jmx.reporter = true
+2024-08-03 20:48:16 bootstrap.controllers = []
+2024-08-03 20:48:16 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:16 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:16 client.id = 
+2024-08-03 20:48:16 connections.max.idle.ms = 300000
+2024-08-03 20:48:16 default.api.timeout.ms = 60000
+2024-08-03 20:48:16 enable.metrics.push = true
+2024-08-03 20:48:16 metadata.max.age.ms = 300000
+2024-08-03 20:48:16 metric.reporters = []
+2024-08-03 20:48:16 metrics.num.samples = 2
+2024-08-03 20:48:16 metrics.recording.level = INFO
+2024-08-03 20:48:16 metrics.sample.window.ms = 30000
+2024-08-03 20:48:16 receive.buffer.bytes = 65536
+2024-08-03 20:48:16 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:16 reconnect.backoff.ms = 50
+2024-08-03 20:48:16 request.timeout.ms = 30000
+2024-08-03 20:48:16 retries = 2147483647
+2024-08-03 20:48:16 retry.backoff.max.ms = 1000
+2024-08-03 20:48:16 retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.client.callback.handler.class = null
+2024-08-03 20:48:16 sasl.jaas.config = null
+2024-08-03 20:48:16 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:16 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:16 sasl.kerberos.service.name = null
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.callback.handler.class = null
+2024-08-03 20:48:16 sasl.login.class = null
+2024-08-03 20:48:16 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:16 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:16 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:16 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.mechanism = GSSAPI
+2024-08-03 20:48:16 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:16 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:16 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:16 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:16 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:16 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:16 security.protocol = PLAINTEXT
+2024-08-03 20:48:16 security.providers = null
+2024-08-03 20:48:16 send.buffer.bytes = 131072
+2024-08-03 20:48:16 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:16 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16    [org.apache.kafka.clients.admin.AdminClientConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,289 INFO   ||  These configurations '[config.storage.topic, rest.advertised.host.name, status.storage.topic, group.id, rest.advertised.port, rest.host.name, task.shutdown.graceful.timeout.ms, plugin.path, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet.   [org.apache.kafka.clients.admin.AdminClientConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,290 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,290 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,290 INFO   ||  Kafka startTimeMs: 1722692896289   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,469 INFO   ||  Kafka cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.connect.runtime.WorkerConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,470 INFO   ||  App info kafka.admin.client for adminclient-1 unregistered   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,473 INFO   ||  Metrics scheduler closed   [org.apache.kafka.common.metrics.Metrics]
+2024-08-03 20:48:16 2024-08-03 13:48:16,473 INFO   ||  Closing reporter org.apache.kafka.common.metrics.JmxReporter   [org.apache.kafka.common.metrics.Metrics]
+2024-08-03 20:48:16 2024-08-03 13:48:16,473 INFO   ||  Metrics reporters closed   [org.apache.kafka.common.metrics.Metrics]
+2024-08-03 20:48:16 2024-08-03 13:48:16,475 INFO   ||  PublicConfig values: 
+2024-08-03 20:48:16 access.control.allow.methods = 
+2024-08-03 20:48:16 access.control.allow.origin = 
+2024-08-03 20:48:16 admin.listeners = null
+2024-08-03 20:48:16 listeners = [http://:8083]
+2024-08-03 20:48:16 response.http.headers.config = 
+2024-08-03 20:48:16 rest.advertised.host.name = 172.18.0.6
+2024-08-03 20:48:16 rest.advertised.listener = null
+2024-08-03 20:48:16 rest.advertised.port = 8083
+2024-08-03 20:48:16 rest.extension.classes = []
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.client.auth = none
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16 topic.tracking.allow.reset = true
+2024-08-03 20:48:16 topic.tracking.enable = true
+2024-08-03 20:48:16    [org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,480 INFO   ||  Logging initialized @2127ms to org.eclipse.jetty.util.log.Slf4jLog   [org.eclipse.jetty.util.log]
+2024-08-03 20:48:16 2024-08-03 13:48:16,501 INFO   ||  Added connector for http://:8083   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,501 INFO   ||  Initializing REST server   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,514 INFO   ||  jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11.0.23+9   [org.eclipse.jetty.server.Server]
+2024-08-03 20:48:16 2024-08-03 13:48:16,527 INFO   ||  Started http_8083@31533eb1{HTTP/1.1, (http/1.1)}{0.0.0.0:8083}   [org.eclipse.jetty.server.AbstractConnector]
+2024-08-03 20:48:16 2024-08-03 13:48:16,527 INFO   ||  Started @2174ms   [org.eclipse.jetty.server.Server]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  Advertised URI: http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  REST server listening at http://172.18.0.6:8083/, advertising URL http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  Advertised URI: http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  REST admin endpoints at http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  Advertised URI: http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,539 INFO   ||  Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden   [org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy]
+2024-08-03 20:48:16 2024-08-03 13:48:16,548 INFO   ||  JsonConverterConfig values: 
+2024-08-03 20:48:16 converter.type = key
+2024-08-03 20:48:16 decimal.format = BASE64
+2024-08-03 20:48:16 replace.null.with.default = true
+2024-08-03 20:48:16 schemas.cache.size = 1000
+2024-08-03 20:48:16 schemas.enable = false
+2024-08-03 20:48:16    [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,560 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,560 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,560 INFO   ||  Kafka startTimeMs: 1722692896560   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,563 INFO   ||  JsonConverterConfig values: 
+2024-08-03 20:48:16 converter.type = key
+2024-08-03 20:48:16 decimal.format = BASE64
+2024-08-03 20:48:16 replace.null.with.default = true
+2024-08-03 20:48:16 schemas.cache.size = 1000
+2024-08-03 20:48:16 schemas.enable = false
+2024-08-03 20:48:16    [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,563 INFO   ||  JsonConverterConfig values: 
+2024-08-03 20:48:16 converter.type = value
+2024-08-03 20:48:16 decimal.format = BASE64
+2024-08-03 20:48:16 replace.null.with.default = true
+2024-08-03 20:48:16 schemas.cache.size = 1000
+2024-08-03 20:48:16 schemas.enable = false
+2024-08-03 20:48:16    [org.apache.kafka.connect.json.JsonConverterConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,574 INFO   ||  Advertised URI: http://172.18.0.6:8083/   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,589 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,589 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,589 INFO   ||  Kafka startTimeMs: 1722692896589   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,591 INFO   ||  Kafka Connect worker initialization took 1864ms   [org.apache.kafka.connect.cli.AbstractConnectCli]
+2024-08-03 20:48:16 2024-08-03 13:48:16,591 INFO   ||  Kafka Connect starting   [org.apache.kafka.connect.runtime.Connect]
+2024-08-03 20:48:16 2024-08-03 13:48:16,592 INFO   ||  Initializing REST resources   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,592 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Herder starting   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 20:48:16 2024-08-03 13:48:16,594 INFO   ||  Worker starting   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 20:48:16 2024-08-03 13:48:16,594 INFO   ||  Starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
+2024-08-03 20:48:16 2024-08-03 13:48:16,594 INFO   ||  Starting KafkaBasedLog with topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:16 2024-08-03 13:48:16,595 INFO   ||  AdminClientConfig values: 
+2024-08-03 20:48:16 auto.include.jmx.reporter = true
+2024-08-03 20:48:16 bootstrap.controllers = []
+2024-08-03 20:48:16 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:16 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:16 client.id = 1-shared-admin
+2024-08-03 20:48:16 connections.max.idle.ms = 300000
+2024-08-03 20:48:16 default.api.timeout.ms = 60000
+2024-08-03 20:48:16 enable.metrics.push = true
+2024-08-03 20:48:16 metadata.max.age.ms = 300000
+2024-08-03 20:48:16 metric.reporters = []
+2024-08-03 20:48:16 metrics.num.samples = 2
+2024-08-03 20:48:16 metrics.recording.level = INFO
+2024-08-03 20:48:16 metrics.sample.window.ms = 30000
+2024-08-03 20:48:16 receive.buffer.bytes = 65536
+2024-08-03 20:48:16 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:16 reconnect.backoff.ms = 50
+2024-08-03 20:48:16 request.timeout.ms = 30000
+2024-08-03 20:48:16 retries = 2147483647
+2024-08-03 20:48:16 retry.backoff.max.ms = 1000
+2024-08-03 20:48:16 retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.client.callback.handler.class = null
+2024-08-03 20:48:16 sasl.jaas.config = null
+2024-08-03 20:48:16 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:16 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:16 sasl.kerberos.service.name = null
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.callback.handler.class = null
+2024-08-03 20:48:16 sasl.login.class = null
+2024-08-03 20:48:16 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:16 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:16 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:16 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.mechanism = GSSAPI
+2024-08-03 20:48:16 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:16 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:16 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:16 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:16 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:16 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:16 security.protocol = PLAINTEXT
+2024-08-03 20:48:16 security.providers = null
+2024-08-03 20:48:16 send.buffer.bytes = 131072
+2024-08-03 20:48:16 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:16 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16    [org.apache.kafka.clients.admin.AdminClientConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,597 INFO   ||  These configurations '[config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, group.id, rest.advertised.port, rest.host.name, task.shutdown.graceful.timeout.ms, plugin.path, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, value.converter.schemas.enable, offset.storage.replication.factor, offset.storage.topic, value.converter, key.converter]' were supplied but are not used yet.   [org.apache.kafka.clients.admin.AdminClientConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,597 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,597 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,597 INFO   ||  Kafka startTimeMs: 1722692896597   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,614 INFO   ||  Adding admin resources to main listener   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,636 INFO   ||  DefaultSessionIdManager workerName=node0   [org.eclipse.jetty.server.session]
+2024-08-03 20:48:16 2024-08-03 13:48:16,636 INFO   ||  No SessionScavenger set, using defaults   [org.eclipse.jetty.server.session]
+2024-08-03 20:48:16 2024-08-03 13:48:16,636 INFO   ||  node0 Scavenging every 660000ms   [org.eclipse.jetty.server.session]
+2024-08-03 20:48:16 2024-08-03 13:48:16,876 INFO   ||  Started o.e.j.s.ServletContextHandler@13662609{/,null,AVAILABLE}   [org.eclipse.jetty.server.handler.ContextHandler]
+2024-08-03 20:48:16 2024-08-03 13:48:16,876 INFO   ||  REST resources initialized; server is started and ready to handle requests   [org.apache.kafka.connect.runtime.rest.RestServer]
+2024-08-03 20:48:16 2024-08-03 13:48:16,876 INFO   ||  Kafka Connect started   [org.apache.kafka.connect.runtime.Connect]
+2024-08-03 20:48:16 2024-08-03 13:48:16,946 INFO   ||  Created topic (name=my_connect_offsets, numPartitions=25, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-08-03 20:48:16 2024-08-03 13:48:16,952 INFO   ||  ProducerConfig values: 
+2024-08-03 20:48:16 acks = -1
+2024-08-03 20:48:16 auto.include.jmx.reporter = true
+2024-08-03 20:48:16 batch.size = 16384
+2024-08-03 20:48:16 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:16 buffer.memory = 33554432
+2024-08-03 20:48:16 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:16 client.id = 1-offsets
+2024-08-03 20:48:16 compression.type = none
+2024-08-03 20:48:16 connections.max.idle.ms = 540000
+2024-08-03 20:48:16 delivery.timeout.ms = 2147483647
+2024-08-03 20:48:16 enable.idempotence = false
+2024-08-03 20:48:16 enable.metrics.push = true
+2024-08-03 20:48:16 interceptor.classes = []
+2024-08-03 20:48:16 key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+2024-08-03 20:48:16 linger.ms = 0
+2024-08-03 20:48:16 max.block.ms = 60000
+2024-08-03 20:48:16 max.in.flight.requests.per.connection = 1
+2024-08-03 20:48:16 max.request.size = 1048576
+2024-08-03 20:48:16 metadata.max.age.ms = 300000
+2024-08-03 20:48:16 metadata.max.idle.ms = 300000
+2024-08-03 20:48:16 metric.reporters = []
+2024-08-03 20:48:16 metrics.num.samples = 2
+2024-08-03 20:48:16 metrics.recording.level = INFO
+2024-08-03 20:48:16 metrics.sample.window.ms = 30000
+2024-08-03 20:48:16 partitioner.adaptive.partitioning.enable = true
+2024-08-03 20:48:16 partitioner.availability.timeout.ms = 0
+2024-08-03 20:48:16 partitioner.class = null
+2024-08-03 20:48:16 partitioner.ignore.keys = false
+2024-08-03 20:48:16 receive.buffer.bytes = 32768
+2024-08-03 20:48:16 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:16 reconnect.backoff.ms = 50
+2024-08-03 20:48:16 request.timeout.ms = 30000
+2024-08-03 20:48:16 retries = 2147483647
+2024-08-03 20:48:16 retry.backoff.max.ms = 1000
+2024-08-03 20:48:16 retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.client.callback.handler.class = null
+2024-08-03 20:48:16 sasl.jaas.config = null
+2024-08-03 20:48:16 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:16 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:16 sasl.kerberos.service.name = null
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.callback.handler.class = null
+2024-08-03 20:48:16 sasl.login.class = null
+2024-08-03 20:48:16 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:16 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:16 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:16 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.mechanism = GSSAPI
+2024-08-03 20:48:16 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:16 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:16 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:16 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:16 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:16 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:16 security.protocol = PLAINTEXT
+2024-08-03 20:48:16 security.providers = null
+2024-08-03 20:48:16 send.buffer.bytes = 131072
+2024-08-03 20:48:16 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:16 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16 transaction.timeout.ms = 60000
+2024-08-03 20:48:16 transactional.id = null
+2024-08-03 20:48:16 value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+2024-08-03 20:48:16    [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,965 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+2024-08-03 20:48:16 WARNING: A provider org.apache.kafka.connect.runtime.rest.resources.RootResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.apache.kafka.connect.runtime.rest.resources.RootResource will be ignored. 
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+2024-08-03 20:48:16 WARNING: A provider org.apache.kafka.connect.runtime.rest.resources.ConnectorsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.apache.kafka.connect.runtime.rest.resources.ConnectorsResource will be ignored. 
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+2024-08-03 20:48:16 WARNING: A provider org.apache.kafka.connect.runtime.rest.resources.InternalConnectResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.apache.kafka.connect.runtime.rest.resources.InternalConnectResource will be ignored. 
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+2024-08-03 20:48:16 WARNING: A provider org.apache.kafka.connect.runtime.rest.resources.ConnectorPluginsResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.apache.kafka.connect.runtime.rest.resources.ConnectorPluginsResource will be ignored. 
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+2024-08-03 20:48:16 WARNING: A provider org.apache.kafka.connect.runtime.rest.resources.LoggingResource registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.apache.kafka.connect.runtime.rest.resources.LoggingResource will be ignored. 
+2024-08-03 20:48:16 Aug 03, 2024 1:48:16 PM org.glassfish.jersey.internal.Errors logErrors
+2024-08-03 20:48:16 WARNING: The following warnings have been detected: WARNING: The (sub)resource method listLoggers in org.apache.kafka.connect.runtime.rest.resources.LoggingResource contains empty path annotation.
+2024-08-03 20:48:16 WARNING: The (sub)resource method createConnector in org.apache.kafka.connect.runtime.rest.resources.ConnectorsResource contains empty path annotation.
+2024-08-03 20:48:16 WARNING: The (sub)resource method listConnectors in org.apache.kafka.connect.runtime.rest.resources.ConnectorsResource contains empty path annotation.
+2024-08-03 20:48:16 WARNING: The (sub)resource method listConnectorPlugins in org.apache.kafka.connect.runtime.rest.resources.ConnectorPluginsResource contains empty path annotation.
+2024-08-03 20:48:16 WARNING: The (sub)resource method serverInfo in org.apache.kafka.connect.runtime.rest.resources.RootResource contains empty path annotation.
+2024-08-03 20:48:16 
+2024-08-03 20:48:16 2024-08-03 13:48:16,976 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,976 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,976 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,976 INFO   ||  Kafka startTimeMs: 1722692896976   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:16 2024-08-03 13:48:16,981 INFO   ||  ConsumerConfig values: 
+2024-08-03 20:48:16 allow.auto.create.topics = true
+2024-08-03 20:48:16 auto.commit.interval.ms = 5000
+2024-08-03 20:48:16 auto.include.jmx.reporter = true
+2024-08-03 20:48:16 auto.offset.reset = earliest
+2024-08-03 20:48:16 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:16 check.crcs = true
+2024-08-03 20:48:16 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:16 client.id = 1-offsets
+2024-08-03 20:48:16 client.rack = 
+2024-08-03 20:48:16 connections.max.idle.ms = 540000
+2024-08-03 20:48:16 default.api.timeout.ms = 60000
+2024-08-03 20:48:16 enable.auto.commit = false
+2024-08-03 20:48:16 enable.metrics.push = true
+2024-08-03 20:48:16 exclude.internal.topics = true
+2024-08-03 20:48:16 fetch.max.bytes = 52428800
+2024-08-03 20:48:16 fetch.max.wait.ms = 500
+2024-08-03 20:48:16 fetch.min.bytes = 1
+2024-08-03 20:48:16 group.id = 1
+2024-08-03 20:48:16 group.instance.id = null
+2024-08-03 20:48:16 group.protocol = classic
+2024-08-03 20:48:16 group.remote.assignor = null
+2024-08-03 20:48:16 heartbeat.interval.ms = 3000
+2024-08-03 20:48:16 interceptor.classes = []
+2024-08-03 20:48:16 internal.leave.group.on.close = true
+2024-08-03 20:48:16 internal.throw.on.fetch.stable.offset.unsupported = false
+2024-08-03 20:48:16 isolation.level = read_uncommitted
+2024-08-03 20:48:16 key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+2024-08-03 20:48:16 max.partition.fetch.bytes = 1048576
+2024-08-03 20:48:16 max.poll.interval.ms = 300000
+2024-08-03 20:48:16 max.poll.records = 500
+2024-08-03 20:48:16 metadata.max.age.ms = 300000
+2024-08-03 20:48:16 metric.reporters = []
+2024-08-03 20:48:16 metrics.num.samples = 2
+2024-08-03 20:48:16 metrics.recording.level = INFO
+2024-08-03 20:48:16 metrics.sample.window.ms = 30000
+2024-08-03 20:48:16 partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+2024-08-03 20:48:16 receive.buffer.bytes = 65536
+2024-08-03 20:48:16 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:16 reconnect.backoff.ms = 50
+2024-08-03 20:48:16 request.timeout.ms = 30000
+2024-08-03 20:48:16 retry.backoff.max.ms = 1000
+2024-08-03 20:48:16 retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.client.callback.handler.class = null
+2024-08-03 20:48:16 sasl.jaas.config = null
+2024-08-03 20:48:16 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:16 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:16 sasl.kerberos.service.name = null
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:16 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.callback.handler.class = null
+2024-08-03 20:48:16 sasl.login.class = null
+2024-08-03 20:48:16 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:16 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:16 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:16 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:16 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:16 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.mechanism = GSSAPI
+2024-08-03 20:48:16 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:16 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:16 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:16 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:16 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:16 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:16 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:16 security.protocol = PLAINTEXT
+2024-08-03 20:48:16 security.providers = null
+2024-08-03 20:48:16 send.buffer.bytes = 131072
+2024-08-03 20:48:16 session.timeout.ms = 45000
+2024-08-03 20:48:16 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:16 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:16 ssl.cipher.suites = null
+2024-08-03 20:48:16 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:16 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:16 ssl.engine.factory.class = null
+2024-08-03 20:48:16 ssl.key.password = null
+2024-08-03 20:48:16 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:16 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:16 ssl.keystore.key = null
+2024-08-03 20:48:16 ssl.keystore.location = null
+2024-08-03 20:48:16 ssl.keystore.password = null
+2024-08-03 20:48:16 ssl.keystore.type = JKS
+2024-08-03 20:48:16 ssl.protocol = TLSv1.3
+2024-08-03 20:48:16 ssl.provider = null
+2024-08-03 20:48:16 ssl.secure.random.implementation = null
+2024-08-03 20:48:16 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:16 ssl.truststore.certificates = null
+2024-08-03 20:48:16 ssl.truststore.location = null
+2024-08-03 20:48:16 ssl.truststore.password = null
+2024-08-03 20:48:16 ssl.truststore.type = JKS
+2024-08-03 20:48:16 value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+2024-08-03 20:48:16    [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:16 2024-08-03 13:48:16,983 INFO   ||  [Producer clientId=1-offsets] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:16 2024-08-03 13:48:16,987 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:17 2024-08-03 13:48:17,003 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,003 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,003 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,003 INFO   ||  Kafka startTimeMs: 1722692897003   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,008 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,013 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Assigned to partition(s): my_connect_offsets-0, my_connect_offsets-5, my_connect_offsets-10, my_connect_offsets-20, my_connect_offsets-15, my_connect_offsets-9, my_connect_offsets-11, my_connect_offsets-4, my_connect_offsets-16, my_connect_offsets-17, my_connect_offsets-3, my_connect_offsets-24, my_connect_offsets-23, my_connect_offsets-13, my_connect_offsets-18, my_connect_offsets-22, my_connect_offsets-8, my_connect_offsets-2, my_connect_offsets-12, my_connect_offsets-19, my_connect_offsets-14, my_connect_offsets-1, my_connect_offsets-6, my_connect_offsets-7, my_connect_offsets-21   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-5   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-10   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-20   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-15   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-9   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-11   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-16   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-17   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,014 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-24   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-23   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-13   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-18   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-22   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-8   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-12   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-19   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-14   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-6   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-7   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,015 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Seeking to earliest offset of partition my_connect_offsets-21   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,042 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-6 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-8 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-18 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-20 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-22 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-24 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-10 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-12 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-14 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-16 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-5 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-7 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-9 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,043 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-19 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-21 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-23 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-11 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-13 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-15 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  [Consumer clientId=1-offsets, groupId=1] Resetting offset for partition my_connect_offsets-17 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  Started KafkaBasedLog for topic my_connect_offsets   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,044 INFO   ||  Finished reading offsets topic and starting KafkaOffsetBackingStore   [org.apache.kafka.connect.storage.KafkaOffsetBackingStore]
+2024-08-03 20:48:17 2024-08-03 13:48:17,046 INFO   ||  Worker started   [org.apache.kafka.connect.runtime.Worker]
+2024-08-03 20:48:17 2024-08-03 13:48:17,046 INFO   ||  Starting KafkaBasedLog with topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,098 INFO   ||  Created topic (name=my_source_connect_statuses, numPartitions=5, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-08-03 20:48:17 2024-08-03 13:48:17,099 INFO   ||  ProducerConfig values: 
+2024-08-03 20:48:17 acks = -1
+2024-08-03 20:48:17 auto.include.jmx.reporter = true
+2024-08-03 20:48:17 batch.size = 16384
+2024-08-03 20:48:17 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:17 buffer.memory = 33554432
+2024-08-03 20:48:17 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:17 client.id = 1-statuses
+2024-08-03 20:48:17 compression.type = none
+2024-08-03 20:48:17 connections.max.idle.ms = 540000
+2024-08-03 20:48:17 delivery.timeout.ms = 120000
+2024-08-03 20:48:17 enable.idempotence = false
+2024-08-03 20:48:17 enable.metrics.push = true
+2024-08-03 20:48:17 interceptor.classes = []
+2024-08-03 20:48:17 key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+2024-08-03 20:48:17 linger.ms = 0
+2024-08-03 20:48:17 max.block.ms = 60000
+2024-08-03 20:48:17 max.in.flight.requests.per.connection = 1
+2024-08-03 20:48:17 max.request.size = 1048576
+2024-08-03 20:48:17 metadata.max.age.ms = 300000
+2024-08-03 20:48:17 metadata.max.idle.ms = 300000
+2024-08-03 20:48:17 metric.reporters = []
+2024-08-03 20:48:17 metrics.num.samples = 2
+2024-08-03 20:48:17 metrics.recording.level = INFO
+2024-08-03 20:48:17 metrics.sample.window.ms = 30000
+2024-08-03 20:48:17 partitioner.adaptive.partitioning.enable = true
+2024-08-03 20:48:17 partitioner.availability.timeout.ms = 0
+2024-08-03 20:48:17 partitioner.class = null
+2024-08-03 20:48:17 partitioner.ignore.keys = false
+2024-08-03 20:48:17 receive.buffer.bytes = 32768
+2024-08-03 20:48:17 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:17 reconnect.backoff.ms = 50
+2024-08-03 20:48:17 request.timeout.ms = 30000
+2024-08-03 20:48:17 retries = 0
+2024-08-03 20:48:17 retry.backoff.max.ms = 1000
+2024-08-03 20:48:17 retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.client.callback.handler.class = null
+2024-08-03 20:48:17 sasl.jaas.config = null
+2024-08-03 20:48:17 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:17 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:17 sasl.kerberos.service.name = null
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.callback.handler.class = null
+2024-08-03 20:48:17 sasl.login.class = null
+2024-08-03 20:48:17 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:17 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:17 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:17 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.mechanism = GSSAPI
+2024-08-03 20:48:17 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:17 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:17 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:17 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:17 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:17 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:17 security.protocol = PLAINTEXT
+2024-08-03 20:48:17 security.providers = null
+2024-08-03 20:48:17 send.buffer.bytes = 131072
+2024-08-03 20:48:17 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:17 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:17 ssl.cipher.suites = null
+2024-08-03 20:48:17 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:17 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:17 ssl.engine.factory.class = null
+2024-08-03 20:48:17 ssl.key.password = null
+2024-08-03 20:48:17 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:17 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:17 ssl.keystore.key = null
+2024-08-03 20:48:17 ssl.keystore.location = null
+2024-08-03 20:48:17 ssl.keystore.password = null
+2024-08-03 20:48:17 ssl.keystore.type = JKS
+2024-08-03 20:48:17 ssl.protocol = TLSv1.3
+2024-08-03 20:48:17 ssl.provider = null
+2024-08-03 20:48:17 ssl.secure.random.implementation = null
+2024-08-03 20:48:17 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:17 ssl.truststore.certificates = null
+2024-08-03 20:48:17 ssl.truststore.location = null
+2024-08-03 20:48:17 ssl.truststore.password = null
+2024-08-03 20:48:17 ssl.truststore.type = JKS
+2024-08-03 20:48:17 transaction.timeout.ms = 60000
+2024-08-03 20:48:17 transactional.id = null
+2024-08-03 20:48:17 value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+2024-08-03 20:48:17    [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,099 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:17 2024-08-03 13:48:17,101 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,101 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,101 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,101 INFO   ||  Kafka startTimeMs: 1722692897101   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,102 INFO   ||  ConsumerConfig values: 
+2024-08-03 20:48:17 allow.auto.create.topics = true
+2024-08-03 20:48:17 auto.commit.interval.ms = 5000
+2024-08-03 20:48:17 auto.include.jmx.reporter = true
+2024-08-03 20:48:17 auto.offset.reset = earliest
+2024-08-03 20:48:17 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:17 check.crcs = true
+2024-08-03 20:48:17 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:17 client.id = 1-statuses
+2024-08-03 20:48:17 client.rack = 
+2024-08-03 20:48:17 connections.max.idle.ms = 540000
+2024-08-03 20:48:17 default.api.timeout.ms = 60000
+2024-08-03 20:48:17 enable.auto.commit = false
+2024-08-03 20:48:17 enable.metrics.push = true
+2024-08-03 20:48:17 exclude.internal.topics = true
+2024-08-03 20:48:17 fetch.max.bytes = 52428800
+2024-08-03 20:48:17 fetch.max.wait.ms = 500
+2024-08-03 20:48:17 fetch.min.bytes = 1
+2024-08-03 20:48:17 group.id = 1
+2024-08-03 20:48:17 group.instance.id = null
+2024-08-03 20:48:17 group.protocol = classic
+2024-08-03 20:48:17 group.remote.assignor = null
+2024-08-03 20:48:17 heartbeat.interval.ms = 3000
+2024-08-03 20:48:17 interceptor.classes = []
+2024-08-03 20:48:17 internal.leave.group.on.close = true
+2024-08-03 20:48:17 internal.throw.on.fetch.stable.offset.unsupported = false
+2024-08-03 20:48:17 isolation.level = read_uncommitted
+2024-08-03 20:48:17 key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+2024-08-03 20:48:17 max.partition.fetch.bytes = 1048576
+2024-08-03 20:48:17 max.poll.interval.ms = 300000
+2024-08-03 20:48:17 max.poll.records = 500
+2024-08-03 20:48:17 metadata.max.age.ms = 300000
+2024-08-03 20:48:17 metric.reporters = []
+2024-08-03 20:48:17 metrics.num.samples = 2
+2024-08-03 20:48:17 metrics.recording.level = INFO
+2024-08-03 20:48:17 metrics.sample.window.ms = 30000
+2024-08-03 20:48:17 partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+2024-08-03 20:48:17 receive.buffer.bytes = 65536
+2024-08-03 20:48:17 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:17 reconnect.backoff.ms = 50
+2024-08-03 20:48:17 request.timeout.ms = 30000
+2024-08-03 20:48:17 retry.backoff.max.ms = 1000
+2024-08-03 20:48:17 retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.client.callback.handler.class = null
+2024-08-03 20:48:17 sasl.jaas.config = null
+2024-08-03 20:48:17 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:17 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:17 sasl.kerberos.service.name = null
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.callback.handler.class = null
+2024-08-03 20:48:17 sasl.login.class = null
+2024-08-03 20:48:17 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:17 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:17 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:17 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.mechanism = GSSAPI
+2024-08-03 20:48:17 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:17 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:17 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:17 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:17 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:17 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:17 security.protocol = PLAINTEXT
+2024-08-03 20:48:17 security.providers = null
+2024-08-03 20:48:17 send.buffer.bytes = 131072
+2024-08-03 20:48:17 session.timeout.ms = 45000
+2024-08-03 20:48:17 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:17 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:17 ssl.cipher.suites = null
+2024-08-03 20:48:17 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:17 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:17 ssl.engine.factory.class = null
+2024-08-03 20:48:17 ssl.key.password = null
+2024-08-03 20:48:17 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:17 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:17 ssl.keystore.key = null
+2024-08-03 20:48:17 ssl.keystore.location = null
+2024-08-03 20:48:17 ssl.keystore.password = null
+2024-08-03 20:48:17 ssl.keystore.type = JKS
+2024-08-03 20:48:17 ssl.protocol = TLSv1.3
+2024-08-03 20:48:17 ssl.provider = null
+2024-08-03 20:48:17 ssl.secure.random.implementation = null
+2024-08-03 20:48:17 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:17 ssl.truststore.certificates = null
+2024-08-03 20:48:17 ssl.truststore.location = null
+2024-08-03 20:48:17 ssl.truststore.password = null
+2024-08-03 20:48:17 ssl.truststore.type = JKS
+2024-08-03 20:48:17 value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+2024-08-03 20:48:17    [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,103 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:17 2024-08-03 13:48:17,105 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,105 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,105 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,105 INFO   ||  Kafka startTimeMs: 1722692897105   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,109 INFO   ||  [Producer clientId=1-statuses] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,111 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,111 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Assigned to partition(s): my_source_connect_statuses-0, my_source_connect_statuses-4, my_source_connect_statuses-1, my_source_connect_statuses-2, my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-08-03 20:48:17 2024-08-03 13:48:17,112 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,112 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-4   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,112 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-1   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,112 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-2   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,112 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Seeking to earliest offset of partition my_source_connect_statuses-3   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-3 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  [Consumer clientId=1-statuses, groupId=1] Resetting offset for partition my_source_connect_statuses-4 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  Finished reading KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,121 INFO   ||  Started KafkaBasedLog for topic my_source_connect_statuses   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,126 INFO   ||  Starting KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-08-03 20:48:17 2024-08-03 13:48:17,126 INFO   ||  Starting KafkaBasedLog with topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,149 INFO   ||  Created topic (name=my_connect_configs, numPartitions=1, replicationFactor=1, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at kafka:9092   [org.apache.kafka.connect.util.TopicAdmin]
+2024-08-03 20:48:17 2024-08-03 13:48:17,149 INFO   ||  ProducerConfig values: 
+2024-08-03 20:48:17 acks = -1
+2024-08-03 20:48:17 auto.include.jmx.reporter = true
+2024-08-03 20:48:17 batch.size = 16384
+2024-08-03 20:48:17 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:17 buffer.memory = 33554432
+2024-08-03 20:48:17 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:17 client.id = 1-configs
+2024-08-03 20:48:17 compression.type = none
+2024-08-03 20:48:17 connections.max.idle.ms = 540000
+2024-08-03 20:48:17 delivery.timeout.ms = 2147483647
+2024-08-03 20:48:17 enable.idempotence = false
+2024-08-03 20:48:17 enable.metrics.push = true
+2024-08-03 20:48:17 interceptor.classes = []
+2024-08-03 20:48:17 key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+2024-08-03 20:48:17 linger.ms = 0
+2024-08-03 20:48:17 max.block.ms = 60000
+2024-08-03 20:48:17 max.in.flight.requests.per.connection = 1
+2024-08-03 20:48:17 max.request.size = 1048576
+2024-08-03 20:48:17 metadata.max.age.ms = 300000
+2024-08-03 20:48:17 metadata.max.idle.ms = 300000
+2024-08-03 20:48:17 metric.reporters = []
+2024-08-03 20:48:17 metrics.num.samples = 2
+2024-08-03 20:48:17 metrics.recording.level = INFO
+2024-08-03 20:48:17 metrics.sample.window.ms = 30000
+2024-08-03 20:48:17 partitioner.adaptive.partitioning.enable = true
+2024-08-03 20:48:17 partitioner.availability.timeout.ms = 0
+2024-08-03 20:48:17 partitioner.class = null
+2024-08-03 20:48:17 partitioner.ignore.keys = false
+2024-08-03 20:48:17 receive.buffer.bytes = 32768
+2024-08-03 20:48:17 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:17 reconnect.backoff.ms = 50
+2024-08-03 20:48:17 request.timeout.ms = 30000
+2024-08-03 20:48:17 retries = 2147483647
+2024-08-03 20:48:17 retry.backoff.max.ms = 1000
+2024-08-03 20:48:17 retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.client.callback.handler.class = null
+2024-08-03 20:48:17 sasl.jaas.config = null
+2024-08-03 20:48:17 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:17 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:17 sasl.kerberos.service.name = null
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.callback.handler.class = null
+2024-08-03 20:48:17 sasl.login.class = null
+2024-08-03 20:48:17 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:17 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:17 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:17 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.mechanism = GSSAPI
+2024-08-03 20:48:17 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:17 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:17 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:17 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:17 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:17 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:17 security.protocol = PLAINTEXT
+2024-08-03 20:48:17 security.providers = null
+2024-08-03 20:48:17 send.buffer.bytes = 131072
+2024-08-03 20:48:17 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:17 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:17 ssl.cipher.suites = null
+2024-08-03 20:48:17 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:17 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:17 ssl.engine.factory.class = null
+2024-08-03 20:48:17 ssl.key.password = null
+2024-08-03 20:48:17 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:17 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:17 ssl.keystore.key = null
+2024-08-03 20:48:17 ssl.keystore.location = null
+2024-08-03 20:48:17 ssl.keystore.password = null
+2024-08-03 20:48:17 ssl.keystore.type = JKS
+2024-08-03 20:48:17 ssl.protocol = TLSv1.3
+2024-08-03 20:48:17 ssl.provider = null
+2024-08-03 20:48:17 ssl.secure.random.implementation = null
+2024-08-03 20:48:17 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:17 ssl.truststore.certificates = null
+2024-08-03 20:48:17 ssl.truststore.location = null
+2024-08-03 20:48:17 ssl.truststore.password = null
+2024-08-03 20:48:17 ssl.truststore.type = JKS
+2024-08-03 20:48:17 transaction.timeout.ms = 60000
+2024-08-03 20:48:17 transactional.id = null
+2024-08-03 20:48:17 value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+2024-08-03 20:48:17    [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,149 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:17 2024-08-03 13:48:17,151 INFO   ||  These configurations '[group.id, rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.producer.ProducerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,151 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,151 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,151 INFO   ||  Kafka startTimeMs: 1722692897151   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,152 INFO   ||  ConsumerConfig values: 
+2024-08-03 20:48:17 allow.auto.create.topics = true
+2024-08-03 20:48:17 auto.commit.interval.ms = 5000
+2024-08-03 20:48:17 auto.include.jmx.reporter = true
+2024-08-03 20:48:17 auto.offset.reset = earliest
+2024-08-03 20:48:17 bootstrap.servers = [kafka:9092]
+2024-08-03 20:48:17 check.crcs = true
+2024-08-03 20:48:17 client.dns.lookup = use_all_dns_ips
+2024-08-03 20:48:17 client.id = 1-configs
+2024-08-03 20:48:17 client.rack = 
+2024-08-03 20:48:17 connections.max.idle.ms = 540000
+2024-08-03 20:48:17 default.api.timeout.ms = 60000
+2024-08-03 20:48:17 enable.auto.commit = false
+2024-08-03 20:48:17 enable.metrics.push = true
+2024-08-03 20:48:17 exclude.internal.topics = true
+2024-08-03 20:48:17 fetch.max.bytes = 52428800
+2024-08-03 20:48:17 fetch.max.wait.ms = 500
+2024-08-03 20:48:17 fetch.min.bytes = 1
+2024-08-03 20:48:17 group.id = 1
+2024-08-03 20:48:17 group.instance.id = null
+2024-08-03 20:48:17 group.protocol = classic
+2024-08-03 20:48:17 group.remote.assignor = null
+2024-08-03 20:48:17 heartbeat.interval.ms = 3000
+2024-08-03 20:48:17 interceptor.classes = []
+2024-08-03 20:48:17 internal.leave.group.on.close = true
+2024-08-03 20:48:17 internal.throw.on.fetch.stable.offset.unsupported = false
+2024-08-03 20:48:17 isolation.level = read_uncommitted
+2024-08-03 20:48:17 key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+2024-08-03 20:48:17 max.partition.fetch.bytes = 1048576
+2024-08-03 20:48:17 max.poll.interval.ms = 300000
+2024-08-03 20:48:17 max.poll.records = 500
+2024-08-03 20:48:17 metadata.max.age.ms = 300000
+2024-08-03 20:48:17 metric.reporters = []
+2024-08-03 20:48:17 metrics.num.samples = 2
+2024-08-03 20:48:17 metrics.recording.level = INFO
+2024-08-03 20:48:17 metrics.sample.window.ms = 30000
+2024-08-03 20:48:17 partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+2024-08-03 20:48:17 receive.buffer.bytes = 65536
+2024-08-03 20:48:17 reconnect.backoff.max.ms = 1000
+2024-08-03 20:48:17 reconnect.backoff.ms = 50
+2024-08-03 20:48:17 request.timeout.ms = 30000
+2024-08-03 20:48:17 retry.backoff.max.ms = 1000
+2024-08-03 20:48:17 retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.client.callback.handler.class = null
+2024-08-03 20:48:17 sasl.jaas.config = null
+2024-08-03 20:48:17 sasl.kerberos.kinit.cmd = /usr/bin/kinit
+2024-08-03 20:48:17 sasl.kerberos.min.time.before.relogin = 60000
+2024-08-03 20:48:17 sasl.kerberos.service.name = null
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.jitter = 0.05
+2024-08-03 20:48:17 sasl.kerberos.ticket.renew.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.callback.handler.class = null
+2024-08-03 20:48:17 sasl.login.class = null
+2024-08-03 20:48:17 sasl.login.connect.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.read.timeout.ms = null
+2024-08-03 20:48:17 sasl.login.refresh.buffer.seconds = 300
+2024-08-03 20:48:17 sasl.login.refresh.min.period.seconds = 60
+2024-08-03 20:48:17 sasl.login.refresh.window.factor = 0.8
+2024-08-03 20:48:17 sasl.login.refresh.window.jitter = 0.05
+2024-08-03 20:48:17 sasl.login.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.login.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.mechanism = GSSAPI
+2024-08-03 20:48:17 sasl.oauthbearer.clock.skew.seconds = 30
+2024-08-03 20:48:17 sasl.oauthbearer.expected.audience = null
+2024-08-03 20:48:17 sasl.oauthbearer.expected.issuer = null
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+2024-08-03 20:48:17 sasl.oauthbearer.jwks.endpoint.url = null
+2024-08-03 20:48:17 sasl.oauthbearer.scope.claim.name = scope
+2024-08-03 20:48:17 sasl.oauthbearer.sub.claim.name = sub
+2024-08-03 20:48:17 sasl.oauthbearer.token.endpoint.url = null
+2024-08-03 20:48:17 security.protocol = PLAINTEXT
+2024-08-03 20:48:17 security.providers = null
+2024-08-03 20:48:17 send.buffer.bytes = 131072
+2024-08-03 20:48:17 session.timeout.ms = 45000
+2024-08-03 20:48:17 socket.connection.setup.timeout.max.ms = 30000
+2024-08-03 20:48:17 socket.connection.setup.timeout.ms = 10000
+2024-08-03 20:48:17 ssl.cipher.suites = null
+2024-08-03 20:48:17 ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+2024-08-03 20:48:17 ssl.endpoint.identification.algorithm = https
+2024-08-03 20:48:17 ssl.engine.factory.class = null
+2024-08-03 20:48:17 ssl.key.password = null
+2024-08-03 20:48:17 ssl.keymanager.algorithm = SunX509
+2024-08-03 20:48:17 ssl.keystore.certificate.chain = null
+2024-08-03 20:48:17 ssl.keystore.key = null
+2024-08-03 20:48:17 ssl.keystore.location = null
+2024-08-03 20:48:17 ssl.keystore.password = null
+2024-08-03 20:48:17 ssl.keystore.type = JKS
+2024-08-03 20:48:17 ssl.protocol = TLSv1.3
+2024-08-03 20:48:17 ssl.provider = null
+2024-08-03 20:48:17 ssl.secure.random.implementation = null
+2024-08-03 20:48:17 ssl.trustmanager.algorithm = PKIX
+2024-08-03 20:48:17 ssl.truststore.certificates = null
+2024-08-03 20:48:17 ssl.truststore.location = null
+2024-08-03 20:48:17 ssl.truststore.password = null
+2024-08-03 20:48:17 ssl.truststore.type = JKS
+2024-08-03 20:48:17 value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+2024-08-03 20:48:17    [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,152 INFO   ||  initializing Kafka metrics collector   [org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector]
+2024-08-03 20:48:17 2024-08-03 13:48:17,154 INFO   ||  These configurations '[rest.advertised.port, task.shutdown.graceful.timeout.ms, plugin.path, metrics.context.connect.kafka.cluster.id, status.storage.replication.factor, offset.storage.topic, value.converter, key.converter, config.storage.topic, metrics.context.connect.group.id, rest.advertised.host.name, status.storage.topic, rest.host.name, offset.flush.timeout.ms, config.storage.replication.factor, offset.flush.interval.ms, rest.port, key.converter.schemas.enable, value.converter.schemas.enable, offset.storage.replication.factor]' were supplied but are not used yet.   [org.apache.kafka.clients.consumer.ConsumerConfig]
+2024-08-03 20:48:17 2024-08-03 13:48:17,154 INFO   ||  Kafka version: 3.7.0   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,154 INFO   ||  Kafka commitId: d46bb044bd68b353   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,154 INFO   ||  Kafka startTimeMs: 1722692897154   [org.apache.kafka.common.utils.AppInfoParser]
+2024-08-03 20:48:17 2024-08-03 13:48:17,157 INFO   ||  [Producer clientId=1-configs] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,158 INFO   ||  [Consumer clientId=1-configs, groupId=1] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,159 INFO   ||  [Consumer clientId=1-configs, groupId=1] Assigned to partition(s): my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer]
+2024-08-03 20:48:17 2024-08-03 13:48:17,159 INFO   ||  [Consumer clientId=1-configs, groupId=1] Seeking to earliest offset of partition my_connect_configs-0   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,166 INFO   ||  [Consumer clientId=1-configs, groupId=1] Resetting offset for partition my_connect_configs-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[kafka:9092 (id: 1001 rack: null)], epoch=0}}.   [org.apache.kafka.clients.consumer.internals.SubscriptionState]
+2024-08-03 20:48:17 2024-08-03 13:48:17,166 INFO   ||  Finished reading KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,166 INFO   ||  Started KafkaBasedLog for topic my_connect_configs   [org.apache.kafka.connect.util.KafkaBasedLog]
+2024-08-03 20:48:17 2024-08-03 13:48:17,166 INFO   ||  Started KafkaConfigBackingStore   [org.apache.kafka.connect.storage.KafkaConfigBackingStore]
+2024-08-03 20:48:17 2024-08-03 13:48:17,166 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Herder started   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 20:48:17 2024-08-03 13:48:17,176 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Cluster ID: _N75fVIoSwC-Ah5JIhzmNA   [org.apache.kafka.clients.Metadata]
+2024-08-03 20:48:17 2024-08-03 13:48:17,522 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Discovered group coordinator kafka:9092 (id: 2147482646 rack: null)   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:17 2024-08-03 13:48:17,523 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Rebalance started   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:17 2024-08-03 13:48:17,523 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:17 2024-08-03 13:48:17,534 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] (Re-)joining group   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:20 2024-08-03 13:48:20,548 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully joined group with generation Generation{generationId=1, memberId='connect-172.18.0.6:8083-16ef3f4f-4ccc-4307-a1a8-72f2d49e00c7', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:20 2024-08-03 13:48:20,594 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Successfully synced group in generation Generation{generationId=1, memberId='connect-172.18.0.6:8083-16ef3f4f-4ccc-4307-a1a8-72f2d49e00c7', protocol='sessioned'}   [org.apache.kafka.connect.runtime.distributed.WorkerCoordinator]
+2024-08-03 20:48:20 2024-08-03 13:48:20,594 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-172.18.0.6:8083-16ef3f4f-4ccc-4307-a1a8-72f2d49e00c7', leaderUrl='http://172.18.0.6:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 20:48:20 2024-08-03 13:48:20,594 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Starting connectors and tasks using config offset -1   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 20:48:20 2024-08-03 13:48:20,594 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Finished starting connectors and tasks   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]
+2024-08-03 20:48:20 2024-08-03 13:48:20,635 INFO   ||  [Worker clientId=connect-172.18.0.6:8083, groupId=1] Session key updated   [org.apache.kafka.connect.runtime.distributed.DistributedHerder]

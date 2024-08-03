@@ -129,6 +129,9 @@ docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --usern
 Connect database to kafka:
 
 ```shell
+# Start PostgreSQL Source Connector
+curl --include -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ --data @unwrap-smt/debezium-source-postgres.json
+
 # Start MySQL connector
 curl --include -X POST -H 'Accept:application/json' -H 'Content-Type:application/json' http://localhost:8083/connectors/ --data @unwrap-smt/source.json
 

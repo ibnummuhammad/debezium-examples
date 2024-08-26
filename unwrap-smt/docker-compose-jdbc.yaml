@@ -31,12 +31,16 @@ services:
       - MYSQL_USER=mysqluser
       - MYSQL_PASSWORD=mysqlpw
   postgres:
-    image: quay.io/debezium/example-postgres:2.1
+    image: ibnummuhammad/postgres:15-alpine3.20
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+    command:
+      - "postgres"
+      - "-c"
+      - "wal_level=logical"
   connect:
     image: ibnummuhammad/debezium-connect-jdbc:2.8.14
     build:

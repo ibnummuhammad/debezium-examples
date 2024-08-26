@@ -123,7 +123,22 @@ docker exec --interactive --tty unwrap-smt-mysql-1 /bin/bash -c 'mysql --user $M
 Create table schema:
 
 ```shell
-docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "CREATE SCHEMA development_ibnu_muhammad"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "CREATE SCHEMA inventory"'
+```
+
+Create table postgres:
+
+```shell
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "CREATE TABLE inventory.ml_moderation_ekyc (first_name varchar(255), last_name varchar(255), email varchar(255))"'
+```
+
+Insert data into postgres inventory.customers:
+
+```shell
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "INSERT INTO inventory.ml_moderation_ekyc VALUES('"'"'Sally'"'"', '"'"'Thomas'"'"', '"'"'sally.thomas@acme.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "INSERT INTO inventory.ml_moderation_ekyc VALUES('"'"'pegang'"'"', '"'"'pandu'"'"', '"'"'pandu.thomas@acme.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "INSERT INTO inventory.ml_moderation_ekyc VALUES('"'"'wayang'"'"', '"'"'winata'"'"', '"'"'dinwal.thomas@acme.com'"'"')"'
+docker exec --interactive --tty unwrap-smt-postgres-1 /bin/bash -c 'psql --username $POSTGRES_USER $POSTGRES_DB --command "INSERT INTO inventory.ml_moderation_ekyc VALUES('"'"'mulu'"'"', '"'"'salim'"'"', '"'"'windata.thomas@acme.com'"'"')"'
 ```
 
 Connect database to kafka:
